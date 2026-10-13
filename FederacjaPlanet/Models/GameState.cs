@@ -4,7 +4,7 @@ using System.Text;
 
 namespace FederacjaPlanet.Models
 {
-    internal class GameState
+    public class GameState
     {
         public int Turn { get; set; } = 1;
         public int Treasury { get; set; } = 300;

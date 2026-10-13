@@ -22,6 +22,8 @@ namespace FederacjaPlanet.Models
 
                 FoodProduction = 0,
                 EnergyProduction = 0,
+                FoodUsage = 0,
+                EnergyUsage = 0,
                 IsIndependent = true,
             };
 
@@ -37,6 +39,8 @@ namespace FederacjaPlanet.Models
 
                 FoodProduction = 100,
                 EnergyProduction = 15,
+                FoodUsage = 20,
+                EnergyUsage = 10,
                 IsIndependent = false,
             };
 
@@ -52,6 +56,8 @@ namespace FederacjaPlanet.Models
 
                 FoodProduction = 10,
                 EnergyProduction = 70,
+                FoodUsage = 20,
+                EnergyUsage = 20,
                 IsIndependent = false,
             };
 
@@ -67,6 +73,8 @@ namespace FederacjaPlanet.Models
 
                 FoodProduction = 10,
                 EnergyProduction = 10,
+                FoodUsage = 20,
+                EnergyUsage = 25,
                 IsIndependent = false,
             };
 
@@ -82,6 +90,8 @@ namespace FederacjaPlanet.Models
 
                 FoodProduction = 5,
                 EnergyProduction = 5,
+                FoodUsage = 10,
+                EnergyUsage = 5,
                 IsIndependent = false,
             };
 
@@ -91,22 +101,24 @@ namespace FederacjaPlanet.Models
                 Description = "opis",
                 Budget = 90,
                 Food = 50,
-                Energy = 50,
-                PublicSatisfaction = 0,
+                Energy = 60,
+                PublicSatisfaction = 50,
                 Authority = 0,
 
-                FoodProduction = 15,
+                FoodProduction = 30,
                 EnergyProduction = 15,
+                FoodUsage = 30,
+                EnergyUsage = 20,
                 IsIndependent = true,
             };
 
 
-            List<Planet> planets = new List<Planet>
+            List<Planet> planetList = new List<Planet>
             {
                 mercury, venus, mars, earth, jupiter, moonAliance,
             };
             //tutaj jeszcze jest case ze moonAliance to co najwyzej do negocjacji wiec moze ich wywalic i taksamo mercury
-            return planets;
+            return planetList;
         }
 
 
