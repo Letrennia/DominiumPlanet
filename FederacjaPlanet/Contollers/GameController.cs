@@ -11,11 +11,15 @@ namespace FederacjaPlanet.Contollers
     {
         private readonly MainMenu mainMenu = new();
         private readonly PlanetMenu planetMenu = new();
+        private readonly DecisionMenu decisionMenu = new();
         private readonly PlanetDetailsView planetDetailsView = new();
-        private List<Planet> planetList = PlanetCreator.CreatePlanetList();
         private readonly PlayerDetailsView playerDetailsView = new();
+        private readonly DecisionDetailsView decisionDetailsView= new();
+        private List<Planet> planetList = PlanetCreator.CreatePlanetList();
+        private List<Decision> decisionList = DecisionCreator.CreateDecisionList();
         GameServices gameServices = new GameServices();
         GameState gameState = new GameState();
+        
 
         public void RunProgram()
         {
@@ -45,7 +49,7 @@ namespace FederacjaPlanet.Contollers
                     case 3:
                         {
                             ShowDecisions();
-                            EndTurn();
+                            //EndTurn();
                             break;
                         }
                     case 4:
@@ -84,7 +88,11 @@ namespace FederacjaPlanet.Contollers
 
         private void ShowDecisions()
         {
-            Console.WriteLine("show decision text");
+            //Console.WriteLine("show decision text");
+            int choice = decisionMenu.ShowMenu();
+            //jakos to trzba przypisac
+            //Decision selectedDecision = decisionList.;
+            //decisionDetailsView.ShowDecisionDetails();
         }
 
         private void EndTurn()
