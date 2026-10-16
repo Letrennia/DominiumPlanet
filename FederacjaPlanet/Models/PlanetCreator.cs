@@ -113,7 +113,7 @@ namespace FederacjaPlanet.Models
 
             Planet moonAliance = new Planet
             {
-                Name = "Sojusz Ksiezycowy",
+                Name = "SK",
                 Description = "Sojusz Ksiezycowy czyli zrzeszenie powstałe jeko wynik dążeń do uzyskania niezaleznosci przez ksiezyce Saturna, Uranu i Neptuna." +
                 "",
                 Budget = 90,

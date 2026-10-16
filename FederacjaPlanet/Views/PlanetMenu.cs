@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Spectre.Console;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -10,14 +11,15 @@ namespace FederacjaPlanet.Views
 
         public int ShowMenu()
         {
-            return consoleView.Show("Wybierz planete", new[]
+            //AnsiConsole.Clear();
+            return consoleView.Show("Wybierz planete", false, new[]
             {
                 "Merkury",
                 "Wenus",
                 "Mars",
                 "Ziemia",
                 "Jowisz",
-                "Saturn Uran Neptun",
+                "Sojusz Ksiezycowy",
                 "Wyjdz"
             });
         }

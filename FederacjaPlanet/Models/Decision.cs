@@ -8,10 +8,15 @@ namespace FederacjaPlanet.Models
     {
         public string Name { get; set; } = "";
         public string Description { get; set; } = "";
+        public string PlanetName { get; set; } = "";
         public int Cost { get; set; }
-        public string CostType { get; set; } = "";
-        public int Gain { get; set; }
-        public string GainType { get; set; } = "";
+        public (int, string, string) GainBudgetFrom { get; set; }
+        public int GainPublicSatisfaction { get; set; }
+        public int GainAuthority { get; set; }
+        public (int, string, string) FoodDistribution { get; set; } //ile, od, do
+        public (int, string, string) EnergyDistribution { get; set; } //ile, od, do
+
+
         public bool IsActive { get; set; }
         public string option1 { get; set; } = "";
         public string option2 { get; set; } = "";

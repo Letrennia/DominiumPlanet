@@ -1,32 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using FederacjaPlanet.Models;
+﻿using FederacjaPlanet.Models;
+using Spectre.Console;
 namespace FederacjaPlanet.Views
 {
     internal class PlanetDetailsView
     {
         public void ShowPlanetDetails(Planet planet)
         {
-            Console.Clear();
-            Console.WriteLine($"### {planet.Name} ###");
-            Console.WriteLine($"\n{planet.Description}\n");
-            Console.WriteLine($"Budzet: {planet.Budget}");
-            Console.WriteLine($"Zywnosc: {planet.Food}");
-            Console.WriteLine($"Energia: {planet.Energy}");
-            Console.WriteLine($"Zadowolenie spoleczne: {planet.PublicSatisfaction}");
-            Console.WriteLine($"Autorytet wladzy: {planet.Authority}");
+            AnsiConsole.MarkupLine($"[magenta bold] {planet.Name} [/]\n");
+            AnsiConsole.WriteLine($"\n{planet.Description}\n");
 
-            Console.WriteLine($"\nProdukcja zywnosci (co ture): {planet.EnergyProduction}");
-            Console.WriteLine($"Produkcja energii (co ture): {planet.EnergyProduction}");
+            if (planet.IsIndependent == false) AnsiConsole.MarkupLine("[bold] Planeta [green]nalezy[/] do Federacji[/]");
+            else AnsiConsole.MarkupLine("[bold]Planeta [red]NIE [/]nalezy do Federacji[/]");
 
-            if (planet.IsIndependent == false) Console.WriteLine("Planeta nalezy do Federacji");
-            else Console.WriteLine("Planeta NIE nalezy do Federacji");
 
-            Console.WriteLine("\nNacisnij dowolny przycisk by kontynuowac.");
-
-            Console.ReadKey(true);
-
+            string drink = AnsiConsole.Prompt(
+                new SelectionPrompt<string>()
+                .Title("")
+                .AddChoices("wyjdz"));
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Spectre.Console;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -10,7 +11,10 @@ namespace FederacjaPlanet.Views
 
         public int ShowMenu()
         {
-            return consoleView.Show("Main menu", new[]
+            AnsiConsole.Clear();
+            //AnsiConsole.Cursor.SetPosition(0, 0);
+
+            return consoleView.Show("Main menu", true, new[]
             {
                 "Raport",
                 "Przeglad planet",

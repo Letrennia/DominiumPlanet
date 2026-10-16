@@ -13,12 +13,14 @@ namespace FederacjaPlanet.Contollers
         private readonly PlanetMenu planetMenu = new();
         private readonly DecisionMenu decisionMenu = new();
         private readonly PlanetDetailsView planetDetailsView = new();
-        private readonly PlayerDetailsView playerDetailsView = new();
+        private readonly FederationStatisticsView federationStatisticsView = new();
         private readonly DecisionDetailsView decisionDetailsView= new();
+        private readonly PlayerStatisticsView playerStatistics = new();
         private List<Planet> planetList = PlanetCreator.CreatePlanetList();
         private List<Decision> decisionList = DecisionCreator.CreateDecisionList();
         GameServices gameServices = new GameServices();
         GameState gameState = new GameState();
+        DecisionServices decisionServices = new DecisionServices();
         
 
         public void RunProgram()
@@ -27,6 +29,8 @@ namespace FederacjaPlanet.Contollers
 
             while (running)
             {
+                playerStatistics.ShowPlayerDetails(gameState);
+
                 int choice = mainMenu.ShowMenu();
 
                 switch (choice)
@@ -43,19 +47,17 @@ namespace FederacjaPlanet.Contollers
                         }
                     case 2:
                         {
-                            ShowPlayerStatistics();
+                            ShowFederationStatistics();
                             break;
                         }
                     case 3:
                         {
                             ShowDecisions();
-                            //EndTurn();
                             break;
                         }
                     case 4:
                         {
                             EndTurn();
-                            //Console.ReadKey(true);
                             break;
                         }
                     case 5:
@@ -81,18 +83,27 @@ namespace FederacjaPlanet.Contollers
             
         }
 
-        private void ShowPlayerStatistics()
+        private void ShowFederationStatistics()
         {
-            playerDetailsView.ShowPlayerDetails(gameState);
+            federationStatisticsView.ShowFederationStatistics(planetList);
+
         }
 
         private void ShowDecisions()
         {
-            //Console.WriteLine("show decision text");
-            int choice = decisionMenu.ShowMenu();
-            //jakos to trzba przypisac
-            //Decision selectedDecision = decisionList.;
-            //decisionDetailsView.ShowDecisionDetails();
+            string choice = decisionMenu.ShowMenu();
+            Decision chosenDecision = decisionList[0]; //zastepcze
+
+            foreach (Decision decision in decisionList)
+            {
+                if (decision.Name == choice)
+                {
+                    chosenDecision = decision;
+                    break;
+                }
+            }
+            int chooseOption = decisionDetailsView.ShowDecisionDetails(chosenDecision);
+            if (chooseOption == 0) decisionServices.WhichDecision(chosenDecision, gameState, planetList, decisionList);
         }
 
         private void EndTurn()
