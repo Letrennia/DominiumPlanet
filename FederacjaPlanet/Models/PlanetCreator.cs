@@ -13,7 +13,11 @@ namespace FederacjaPlanet.Models
             Planet mercury = new Planet
             {
                 Name = "Merkury",
-                Description = "opis",
+                Description = "Po nieudanej terraformacji Merkury stał się symbolem próżności ludzkości - przez niedopatrzenia i zaniedbania" +
+                "do ciągle tworzącej się atmosfery dostał się toksyczny dym, który po opadnięciu doprowadził do kompletnej erozji gruntu." +
+                "Dzisiaj, Merkury został owiany mgiełką tajemnicy - znane są legendy rozpalające umysły dorobkiewiczow o tym że pod jałową i zrogowaciałą powierznią znajdują się liczne" +
+                "i cenne surowce.\n Ile jest prawdy w pogloskach? \n Ostatnia załoga została wysłana w celach badawczych ponad 150 lat temu. Kontakt stracono 20 minut po wkroczeniu do zrujnowanej atmosfery" +
+                "a ostatni komunikat z statku 'New Dephi' brzmiał ''.",
                 Budget = 0,
                 Food = 0,
                 Energy = 0,
@@ -30,7 +34,11 @@ namespace FederacjaPlanet.Models
             Planet venus = new Planet
             {
                 Name = "Wenus",
-                Description = "opis",
+                Description = "Dzięki rozwiniętej kultruze agralnej, przystępnej temperaturze i szybkiemu obiegowi wokół Słońca Wenus" +
+                "z czasem stało się spichlerzem Federacji Planet. Podczas wojny, chociaż oficjalnie poparli władzę centralną [], to tajemnicą" +
+                "Poliszynela jest fakt że handlowali z każdym kto miał czym zapłacić. Dzisiaj, Wenus zamiast szmaragdem w koronie, pozostaje raczej" +
+                "cierniem w boku rządzących, gdzie zamist szukać wspólnego dobra liczą raczej na szybkie napełnienie" +
+                "swoich włąsnych kieszeni.",
                 Budget = 300,
                 Food = 200,
                 Energy = 120,
@@ -47,7 +55,12 @@ namespace FederacjaPlanet.Models
             Planet mars = new Planet
             {
                 Name = "Mars",
-                Description = "opis",
+                Description = "Miejsce skrajnosci. Ze względu na bogate i rozległe złoża surowców, większość powierzchni Marsa pokrywają szyby i fabryki - to właśnie" +
+                "tutaj przybywają ludzie w poszukiwaniu szczęścia, które było propagowane za panowania twojego poprzednika []." +
+                "Co faktycznie znajdują? Jeśli są inwestorami to najczęściej hermetyczne środowisko, niechętne do przyjmowania konkurencji." +
+                "Natomiast jeśli interesuje ich praca to i owszem, kazda para rąk się przyda. Inna sprawa gdy chodzi o wynagrodzenie. Stawki są marne a od kiedy" +
+                "gospodarka przestawiła się na wspieranie marynarki Mars dalej nie może dojść do siebie. Nierówności społeczne są większe niż kiedykolwiek" +
+                "wcześniej, a ludzie przepracowani i nieodżywieni. \n Ile czasu minie nim głodujący wyjdą na ulice?",
                 Budget = 50,
                 Food = 40,
                 Energy = 200,
@@ -81,7 +94,10 @@ namespace FederacjaPlanet.Models
             Planet jupiter = new Planet
             {
                 Name = "Jowisz",
-                Description = "opis",
+                Description = "Kiedys miejsce z wieloma osrodkami kluturalnymi i centrami danych, dzis ruina. To właśnie na ksiezycach" +
+                "Jowisza miały miejsce najbardziej zazarce walki. Teraz gdy Wojna się skonczyla a 80% infrastruktury zostało zniszczone" +
+                "mieszkancy moga jedynie liczyc na pomoc innych planet i federalny plan odbudowy. Czy Ksiezyce Jowisza mają jeszcze szanse" +
+                "na lepszą przyszłość?",
                 Budget = 30,
                 Food = 20,
                 Energy = 30,
@@ -98,7 +114,8 @@ namespace FederacjaPlanet.Models
             Planet moonAliance = new Planet
             {
                 Name = "Sojusz Ksiezycowy",
-                Description = "opis",
+                Description = "Sojusz Ksiezycowy czyli zrzeszenie powstałe jeko wynik dążeń do uzyskania niezaleznosci przez ksiezyce Saturna, Uranu i Neptuna." +
+                "",
                 Budget = 90,
                 Food = 50,
                 Energy = 60,
