@@ -3,32 +3,30 @@ using Spectre.Console;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using FederacjaPlanet.Views;
 
 namespace FederacjaPlanet.Services
 {
     internal class DecisionServices
     {
-        public List<Decision> WhichDecision(Decision decision, GameState gameState, List<Planet> planetList, List<Decision> decisionList)
+        public void WhichDecision(Decision chosenDecision, GameState gameState, List<Planet> planetList)
         {
-            if (gameState.Treasury - decision.Cost < 0)
+            if (gameState.Treasury - chosenDecision.Cost < 0)
             {
-                AnsiConsole.MarkupLine("[red]Nie możesz sfinansować tego przedsięwzięcia.[/]"); //to trzeba przeniesc do view
-                return decisionList;
+                ReactionView.NegativeReaction(); return;
             }
+            ReactionView.PositiveReaction();
 
-            AnsiConsole.MarkupLine("[green]Zrealizowano przedsięwzięcie.[/]"); //to trzeba przeniesc do view
 
-            decision.IsActive = false;
-            decisionList.Remove(decision);
 
-            if (decision.Name == "Kredyt" || decision.Name == "Spłać część kredytu")
-                BankDecision(decision, gameState, planetList);
-            else if (decision.Name == "Wygłoś mowę")
-                SpeechDecision(decision, planetList);
+            chosenDecision.IsActive = false;
+
+            if (chosenDecision.Name == "Kredyt" || chosenDecision.Name == "Spłać część kredytu")
+                BankDecision(chosenDecision, gameState, planetList);
+            else if (chosenDecision.Name == "Wygłoś mowę")
+                SpeechDecision(chosenDecision, planetList);
             else
-                BasicDecisionConsequences(decision, gameState, planetList);
-
-            return decisionList;
+                BasicDecisionConsequences(chosenDecision, gameState, planetList);
 
         }
         private void BasicDecisionConsequences(Decision decision, GameState gameState, List<Planet> planetList)

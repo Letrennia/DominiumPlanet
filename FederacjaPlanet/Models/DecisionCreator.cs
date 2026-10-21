@@ -52,7 +52,7 @@ namespace FederacjaPlanet.Models
             {
                 Name = "Kredyt",
                 Description = "Ziemscy bankierzy są zawsze skłonni pożyczyć pieniądze tak szanownej osobie jak Władca Federacji. Na jaki procent? Proszę nie zaprzątać " +
-                "tym sobie głowy Ekscelencjo! Jaki okres? Na pewno uda nam się dogadać...\n\n" +
+                "tym sobie głowy Ekscelencjo! Na jaki okres? Z pewnością uda nam się dogadać...\n\n" +
                 "Zaciągnięty dług jednak nie maleje, a w dodatku dalej nie udało ci się całkowicie spłacić kredytu, który został przeznaczony na modernizacje floty która nalezy do twojej rodziny. " +
                 "Czy możesz sobie pozwolić na oplatanie się kolejnymi węzami założonymi przez tych chciwych ludzi?",
                 Cost = 0,
@@ -123,7 +123,7 @@ namespace FederacjaPlanet.Models
                 FoodDistribution = (25, "Ziemia", "Mars"),
                 IsActive = true,
                 option1 = "Wyślij posłów na Tytan (księżyc Saturna).",
-                option2 = "Rany wciąż są zbyt świeże..."
+                option2 = "Zachowaj żywność dla siebie."
             };
 
 

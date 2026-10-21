@@ -8,8 +8,7 @@ namespace FederacjaPlanet.Views
     public class ConsoleView()
     {
         private readonly PlayerStatisticsView playerStatisticsView = new();
-        GameState gameState = new GameState();
-        public int Show(string title, bool playerBar, string[] options)
+        public int Show(string title, bool playerBar, string[] options, GameState gameState)
         {
             if (playerBar == true) playerStatisticsView.ShowPlayerDetails(gameState);
             string choice = AnsiConsole.Prompt(
@@ -22,7 +21,7 @@ namespace FederacjaPlanet.Views
 
         }
 
-        public string ShowString(string title, bool playerBar, string[] options)
+        public string ShowString(string title, bool playerBar, string[] options, GameState gameState)
         {
             if (playerBar == true) playerStatisticsView.ShowPlayerDetails(gameState);
             string choice = AnsiConsole.Prompt(

@@ -9,7 +9,7 @@ namespace FederacjaPlanet.Views
     public class DecisionDetailsView
     {
         private readonly ConsoleView consoleView = new();
-        public int ShowDecisionDetails(Decision decision)
+        public int ShowDecisionDetails(Decision decision, GameState gameState)
         {
             AnsiConsole.WriteLine($"{decision.Name}\n");
             AnsiConsole.WriteLine($"Opis: {decision.Description}\n\n");
@@ -20,9 +20,9 @@ namespace FederacjaPlanet.Views
 
             AnsiConsole.Write(table);
 
-            string[] optionArray = {decision.option1, decision.option2 };
+            string[] optionArray = {decision.option1, decision.option2};
 
-            return consoleView.Show("", false, optionArray);
+            return consoleView.Show("", false, optionArray, gameState);
 
         }
     }

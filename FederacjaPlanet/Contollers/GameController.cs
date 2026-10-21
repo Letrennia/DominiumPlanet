@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Text;
 using FederacjaPlanet.Models;
 using FederacjaPlanet.Services;
+using Spectre.Console;
 
 namespace FederacjaPlanet.Contollers
 {
@@ -15,12 +16,14 @@ namespace FederacjaPlanet.Contollers
         private readonly PlanetDetailsView planetDetailsView = new();
         private readonly FederationStatisticsView federationStatisticsView = new();
         private readonly DecisionDetailsView decisionDetailsView= new();
-        private readonly PlayerStatisticsView playerStatistics = new();
+        //private readonly PlayerStatisticsView playerStatistics = new();
         private List<Planet> planetList = PlanetCreator.CreatePlanetList();
         private List<Decision> decisionList = DecisionCreator.CreateDecisionList();
         GameServices gameServices = new GameServices();
         GameState gameState = new GameState();
         DecisionServices decisionServices = new DecisionServices();
+        Decision decision = new Decision();
+
         
 
         public void RunProgram()
@@ -29,9 +32,8 @@ namespace FederacjaPlanet.Contollers
 
             while (running)
             {
-                playerStatistics.ShowPlayerDetails(gameState);
 
-                int choice = mainMenu.ShowMenu();
+                int choice = mainMenu.ShowMenu(gameState);
 
                 switch (choice)
                 {
@@ -72,12 +74,19 @@ namespace FederacjaPlanet.Contollers
 
         private void ShowReport()
         {
-            Console.WriteLine("show report text");
+            //Console.WriteLine("show report text");
+            //foreach (Decision deci in decisionList)
+            //{
+
+            //    AnsiConsole.WriteLine($"{deci.Name} {deci.IsActive}\n");
+            //}
+            //Console.ReadKey();
         }
 
         private void ShowPlanets()
         {
-            int choice = planetMenu.ShowMenu();
+            int choice = planetMenu.ShowMenu(gameState);
+            if (choice == 6) return;
             Planet selectedPlanet = planetList[choice];
             planetDetailsView.ShowPlanetDetails(selectedPlanet);
             
@@ -91,8 +100,8 @@ namespace FederacjaPlanet.Contollers
 
         private void ShowDecisions()
         {
-            string choice = decisionMenu.ShowMenu();
-            Decision chosenDecision = decisionList[0]; //zastepcze
+            string choice = decisionMenu.ShowMenu(gameState, decisionList);
+            Decision chosenDecision = decisionList[decisionList.Count - 1]; //zastepcze ale nie dziala
 
             foreach (Decision decision in decisionList)
             {
@@ -102,8 +111,8 @@ namespace FederacjaPlanet.Contollers
                     break;
                 }
             }
-            int chooseOption = decisionDetailsView.ShowDecisionDetails(chosenDecision);
-            if (chooseOption == 0) decisionServices.WhichDecision(chosenDecision, gameState, planetList, decisionList);
+            int chooseOption = decisionDetailsView.ShowDecisionDetails(chosenDecision, gameState);
+            if (chooseOption == 0) decisionServices.WhichDecision(chosenDecision, gameState, planetList);
         }
 
         private void EndTurn()

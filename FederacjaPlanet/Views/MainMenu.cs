@@ -1,4 +1,5 @@
-﻿using Spectre.Console;
+﻿using FederacjaPlanet.Models;
+using Spectre.Console;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -9,10 +10,9 @@ namespace FederacjaPlanet.Views
     {
         private readonly ConsoleView consoleView = new();
 
-        public int ShowMenu()
+        public int ShowMenu(GameState gameState)
         {
             AnsiConsole.Clear();
-            //AnsiConsole.Cursor.SetPosition(0, 0);
 
             return consoleView.Show("Main menu", true, new[]
             {
@@ -22,7 +22,7 @@ namespace FederacjaPlanet.Views
                 "Decyzje",
                 "Zakoncz ture",
                 "Wyjscie"
-            });
+            }, gameState);
 
         }
     }

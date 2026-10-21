@@ -9,9 +9,9 @@ namespace FederacjaPlanet.Views
     internal class DecisionMenu
     {
         private readonly ConsoleView consoleView = new();
-        private List<Decision> decisionList = DecisionCreator.CreateDecisionList();
+        //private List<Decision> decisionList = DecisionCreator.CreateDecisionList();
 
-        public string ShowMenu()
+        public string ShowMenu(GameState gameState, List<Decision> decisionList)
         {
             AnsiConsole.Clear();
             List<string> activeDecisionList = new List<string>();
@@ -25,7 +25,7 @@ namespace FederacjaPlanet.Views
             activeDecisionList.Add("Wyjdz");
 
             string[] activeDecisionArray = activeDecisionList.ToArray();
-            return consoleView.ShowString("Wybierz decyzje", true, activeDecisionArray);
+            return consoleView.ShowString("Wybierz decyzje", true, activeDecisionArray, gameState);
         }
     }
 }
