@@ -9,7 +9,6 @@ namespace FederacjaPlanet.Views
     internal class DecisionMenu
     {
         private readonly ConsoleView consoleView = new();
-        //private List<Decision> decisionList = DecisionCreator.CreateDecisionList();
 
         public string ShowMenu(GameState gameState, List<Decision> decisionList)
         {

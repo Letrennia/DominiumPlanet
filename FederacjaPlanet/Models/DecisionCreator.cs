@@ -122,7 +122,7 @@ namespace FederacjaPlanet.Models
                 Cost = 20,
                 FoodDistribution = (25, "Ziemia", "Mars"),
                 IsActive = true,
-                option1 = "Wyślij posłów na Tytan (księżyc Saturna).",
+                option1 = "Prześlij żywność na Mars.",
                 option2 = "Zachowaj żywność dla siebie."
             };
 

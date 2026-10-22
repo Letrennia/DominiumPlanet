@@ -13,7 +13,7 @@ namespace FederacjaPlanet.Views
                 new SelectionPrompt<string>()
                 .Title($"[red]Nie możesz sfinansować tego przedsięwzięcia.[/]")
                 .WrapAround()
-                .AddChoices("Kontynuuj"));
+                .AddChoices("Wróć"));
         }
         public static void PositiveReaction()
         {
@@ -22,6 +22,28 @@ namespace FederacjaPlanet.Views
                 .Title($"[green]Zrealizowano przedsięwzięcie.[/]")
                 .WrapAround()
                 .AddChoices("Kontynuuj"));
+        }
+
+        public static void NegativeSave(Exception ex)
+        {
+            AnsiConsole.MarkupLine($"[red]Nie udało się zapisać gry.[/]\n {ex.Message}");
+            Console.ReadKey();
+        }
+        public static void PositiveSave()
+        {
+            AnsiConsole.MarkupLine($"[green]Poprawnie zapisano stan gry.[/]");
+            Console.ReadKey();
+        }
+
+        public static void NegativeRead(Exception ex)
+        {
+            AnsiConsole.MarkupLine($"[red]Nie udało się wczytać gry.[/]\n {ex.Message}");
+            Console.ReadKey();
+        }
+        public static void PositiveRead()
+        {
+            AnsiConsole.MarkupLine($"[green]Poprawnie wczytano stan gry.[/]");
+            Console.ReadKey();
         }
     }
 }

@@ -1,0 +1,183 @@
+{
+  "GameState": {
+    "Turn": 3,
+    "Treasury": 580,
+    "Dept": 1600,
+    "DeptCount": 2,
+    "Planets": [
+      {
+        "Name": "Merkury",
+        "Description": "Po nieudanej terraformacji Merkury stał się symbolem próżności ludzkości - przez niedopatrzenia i zaniedbania do ciągle tworzącej się atmosfery dostał się duszący, toksyczny dym, który po opadnięciu doprowadził do kompletnej erozji gruntu. Dzisiaj, Merkury został owiany mgiełką tajemnicy - znane są legendy rozpalające umysł, o tym że pod jałową i zrogowaciałą powierznią znajdują się liczne i cenne surowce.\nIle jest prawdy w pogloskach? \n Ostatnia załoga została wysłana w celach badawczych ponad 150 lat temu. Kontakt stracono 20 minut po wkroczeniu do zrujnowanej atmosfery a ostatni komunikat ze statku 'New Dephi' brzmiał 'temperatura wewnątrz kokpitu w normie...'.",
+        "Budget": 0,
+        "Food": 0,
+        "Energy": 0,
+        "PublicSatisfaction": 0,
+        "Authority": 0,
+        "FoodProduction": 0,
+        "EnergyProduction": 0,
+        "FoodUsage": 0,
+        "EnergyUsage": 0,
+        "IsIndependent": true
+      },
+      {
+        "Name": "Wenus",
+        "Description": "Dzięki rozwiniętej kultruze agralnej, przystępnej temperaturze i szybkiemu obiegowi wokół Słońca Wenus z czasem stało się spichlerzem Federacji Planet. Podczas wojny, chociaż oficjalnie poparli władzę centralną [], to tajemnicą Poliszynela jest fakt że handlowali z każdym kto miał czym zapłacić. Dzisiaj, Wenus zamiast szmaragdem w koronie, pozostaje raczej cierniem w boku rządzących, gdzie zamist szukać wspólnego dobra każdy liczy na szybkie napełnienie swoich własnych kieszeni. ",
+        "Budget": 300,
+        "Food": 200,
+        "Energy": 120,
+        "PublicSatisfaction": 85,
+        "Authority": 45,
+        "FoodProduction": 100,
+        "EnergyProduction": 15,
+        "FoodUsage": 20,
+        "EnergyUsage": 10,
+        "IsIndependent": false
+      },
+      {
+        "Name": "Mars",
+        "Description": "Miejsce skrajnosci, gdzie monumentalne wieżowce mogą sąsiadować z osiedlami robotniczymi. Ze względu na bogate i rozległe złoża surowców, większość powierzchni Marsa pokrywają szyby i fabryki - to właśnie tutaj przybywają ludzie w poszukiwaniu szczęścia i szybkiego zarobku. Co faktycznie znajdują? Jeśli jest się inwestorem to najczęściej hermetyczne środowisko, niechętne do przyjmowania konkurencji. Natomiast jeśli interesuje ich praca to i owszem, kazda para rąk się przyda. Inna sprawa gdy chodzi o wynagrodzenie. Stawki są marne a od kiedygospodarka przestawiła się na wspieranie marynarki, Mars dalej nie może dojść do siebie. Nierówności społeczne są większe niż kiedykolwiek, a ludzie przepracowani i nieodżywieni.\nWłaściciele fabryk nie przejmuje to wcale - w końcu nowych pracowników ciągle przybywa, a wyniki nigdy nie były lepsze!\n\nIle czasu minie nim głodujący wyjdą na ulice?",
+        "Budget": 50,
+        "Food": 40,
+        "Energy": 200,
+        "PublicSatisfaction": 40,
+        "Authority": 56,
+        "FoodProduction": 10,
+        "EnergyProduction": 70,
+        "FoodUsage": 20,
+        "EnergyUsage": 20,
+        "IsIndependent": false
+      },
+      {
+        "Name": "Ziemia",
+        "Description": "To właśnie od tej planety wszystko się zaczęło. Z niej wyruszyły ekspedycje na inne planety, które wraz z czasem zostały dołączone do Federacji. Pomimo upływu lat i wyczerpania surowców Ziemia nie jest jedynie reliktem przeszłości. To właśnie tutaj znajdują się liczne miejsca kluczowe dla wspólnej histori oraz siedziby banków. Jest to również siedziba władcy, który w każdej chwili może zwrócić się o zaopatrzenie skarbca..",
+        "Budget": 100,
+        "Food": 90,
+        "Energy": 80,
+        "PublicSatisfaction": 60,
+        "Authority": 50,
+        "FoodProduction": 10,
+        "EnergyProduction": 10,
+        "FoodUsage": 20,
+        "EnergyUsage": 25,
+        "IsIndependent": false
+      },
+      {
+        "Name": "Jowisz",
+        "Description": "Kiedys miejsce z wieloma osrodkami kluturalnymi i centrami danych, dzis ruina. To właśnie na ksiezycach Jowisza miały miejsce najbardziej zazarce walki podczas Wielkiej Walki Planetarnej. Teraz gdy Wojna się skonczyla a 80% infrastruktury zostało zniszczone mieszkancy moga jedynie liczyc na pomoc innych planet i federalny plan odbudowy. Wiele osób twierdzi że Księżyce Jowisza już nigdy nie odzyskają dawnej świetności, i lepiej byłoby zainwestować w terraformacje innego miejsca zamiast wydawać fundusze na takie gruzowisko. Czy Ksiezyce Jowisza mają jeszcze szanse na lepszą przyszłość?",
+        "Budget": 30,
+        "Food": 20,
+        "Energy": 30,
+        "PublicSatisfaction": 30,
+        "Authority": 35,
+        "FoodProduction": 5,
+        "EnergyProduction": 5,
+        "FoodUsage": 10,
+        "EnergyUsage": 5,
+        "IsIndependent": false
+      },
+      {
+        "Name": "SK",
+        "Description": "Sojusz Ksiezycowy czyli zrzeszenie powstałe jako wynik dążeń do uzyskania niezaleznosci przez ksiezyce Saturna, Uranu i Neptuna. Niewiele wiadomo o sytuacji wewnętrznejsojuszu, ale jak donoszą szpiedzy Federacji - wydaje się, że powoli ale skutecznie gospodarka się podności",
+        "Budget": 900,
+        "Food": 200,
+        "Energy": 90,
+        "PublicSatisfaction": 50,
+        "Authority": 0,
+        "FoodProduction": 72,
+        "EnergyProduction": 115,
+        "FoodUsage": 70,
+        "EnergyUsage": 80,
+        "IsIndependent": true
+      }
+    ]
+  },
+  "Raport": [
+    {
+      "Item1": 1,
+      "Item2": {
+        "Name": "Kredyt",
+        "Description": "Ziemscy bankierzy są zawsze skłonni pożyczyć pieniądze tak szanownej osobie jak Władca Federacji. Na jaki procent? Proszę nie zaprzątać tym sobie głowy Ekscelencjo! Na jaki okres? Z pewnością uda nam się dogadać...\n\nZaciągnięty dług jednak nie maleje, a w dodatku dalej nie udało ci się całkowicie spłacić kredytu, który został przeznaczony na modernizacje floty która nalezy do twojej rodziny. Czy możesz sobie pozwolić na oplatanie się kolejnymi węzami założonymi przez tych chciwych ludzi?",
+        "PlanetName": "",
+        "Cost": 0,
+        "GainBudgetFrom": {
+          "Item1": 500,
+          "Item2": "",
+          "Item3": ""
+        },
+        "GainPublicSatisfaction": 0,
+        "GainAuthority": -15,
+        "FoodDistribution": {
+          "Item1": 0,
+          "Item2": null,
+          "Item3": null
+        },
+        "EnergyDistribution": {
+          "Item1": 0,
+          "Item2": null,
+          "Item3": null
+        },
+        "IsActive": true,
+        "option1": "Zadlóż sie (500).",
+        "option2": "Nie bierz kolejnego kredytu."
+      }
+    },
+    {
+      "Item1": 1,
+      "Item2": {
+        "Name": "Przekaz srodki na odbudowę Jowisza",
+        "Description": "Podczas twojej przemowy padły kluczowe słowa 'Dołożę wszelkich starań aby naprawić krzywdy wyrządzone niudolnymi rządami mojego poprzednika [...]. Nie pozwolę by Jowisz podzielił los Merkurego!\n\nTo wszystko piękne słowa, ale czy coś za nimi stoi?",
+        "PlanetName": "",
+        "Cost": 200,
+        "GainBudgetFrom": {
+          "Item1": 0,
+          "Item2": null,
+          "Item3": null
+        },
+        "GainPublicSatisfaction": 10,
+        "GainAuthority": 6,
+        "FoodDistribution": {
+          "Item1": 0,
+          "Item2": null,
+          "Item3": null
+        },
+        "EnergyDistribution": {
+          "Item1": 0,
+          "Item2": null,
+          "Item3": null
+        },
+        "IsActive": false,
+        "option1": "Przekaż fundusze na odbudowę (200).",
+        "option2": "Poczekaj z odbudową."
+      }
+    },
+    {
+      "Item1": 3,
+      "Item2": {
+        "Name": "Przyslij czesc zywnosci na Mars",
+        "Description": "Sytuacja na Marsie jak zwykle jest daleka od idealnych. Przyslij czesc wlasnych zapasow na Mars",
+        "PlanetName": "",
+        "Cost": 20,
+        "GainBudgetFrom": {
+          "Item1": 0,
+          "Item2": null,
+          "Item3": null
+        },
+        "GainPublicSatisfaction": 0,
+        "GainAuthority": 0,
+        "FoodDistribution": {
+          "Item1": 25,
+          "Item2": "Ziemia",
+          "Item3": "Mars"
+        },
+        "EnergyDistribution": {
+          "Item1": 0,
+          "Item2": null,
+          "Item3": null
+        },
+        "IsActive": false,
+        "option1": "Prześlij żywność na Mars.",
+        "option2": "Zachowaj żywność dla siebie."
+      }
+    }
+  ]
+}

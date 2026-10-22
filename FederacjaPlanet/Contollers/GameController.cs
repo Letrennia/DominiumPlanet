@@ -17,12 +17,16 @@ namespace FederacjaPlanet.Contollers
         private readonly FederationStatisticsView federationStatisticsView = new();
         private readonly DecisionDetailsView decisionDetailsView= new();
         //private readonly PlayerStatisticsView playerStatistics = new();
+        private GameServices gameServices = new GameServices();
+        private GameState gameState = new GameState();
+        private RaportDetailsView raportView = new RaportDetailsView();
+        private DecisionServices decisionServices = new DecisionServices();
+        private FileGameServices fileGameServices = new FileGameServices();
         private List<Planet> planetList = PlanetCreator.CreatePlanetList();
         private List<Decision> decisionList = DecisionCreator.CreateDecisionList();
-        GameServices gameServices = new GameServices();
-        GameState gameState = new GameState();
-        DecisionServices decisionServices = new DecisionServices();
-        Decision decision = new Decision();
+        private List<(int, Decision)> raportList = new List<(int, Decision)>();
+        //Decision decision = new Decision();
+
 
         
 
@@ -64,6 +68,16 @@ namespace FederacjaPlanet.Contollers
                         }
                     case 5:
                         {
+                            SaveGame();
+                            break;
+                        }
+                    case 6:
+                        {
+                            LoadGame();
+                            break;
+                        }
+                    case 7:
+                        {
                             EndGame();
                             break;
                         }
@@ -74,13 +88,7 @@ namespace FederacjaPlanet.Contollers
 
         private void ShowReport()
         {
-            //Console.WriteLine("show report text");
-            //foreach (Decision deci in decisionList)
-            //{
-
-            //    AnsiConsole.WriteLine($"{deci.Name} {deci.IsActive}\n");
-            //}
-            //Console.ReadKey();
+            raportView.ShowRaportDetails(raportList);
         }
 
         private void ShowPlanets()
@@ -101,6 +109,8 @@ namespace FederacjaPlanet.Contollers
         private void ShowDecisions()
         {
             string choice = decisionMenu.ShowMenu(gameState, decisionList);
+            if (choice == "Wyjdz") return;
+
             Decision chosenDecision = decisionList[decisionList.Count - 1]; //zastepcze ale nie dziala
 
             foreach (Decision decision in decisionList)
@@ -112,7 +122,7 @@ namespace FederacjaPlanet.Contollers
                 }
             }
             int chooseOption = decisionDetailsView.ShowDecisionDetails(chosenDecision, gameState);
-            if (chooseOption == 0) decisionServices.WhichDecision(chosenDecision, gameState, planetList);
+            if (chooseOption == 0) decisionServices.WhichDecision(chosenDecision, gameState, planetList, raportList);
         }
 
         private void EndTurn()
@@ -121,7 +131,25 @@ namespace FederacjaPlanet.Contollers
             gameServices.NextTurn(gameState);
         }
         
+        private void SaveGame()
+        {
+            var save = new SaveDataModel();
+            save.GameState = gameState;
+            save.Raport = raportList;
 
+            fileGameServices.SaveGameToJSON(save);
+        }
+        
+        private void LoadGame()
+        {
+            SaveDataModel saveDataModel = fileGameServices.ReadGameFromJSON();
+
+            if (saveDataModel == null) return;
+
+            gameState = saveDataModel.GameState;
+            raportList = saveDataModel.Raport;
+
+        }
 
         private void EndGame()
         {

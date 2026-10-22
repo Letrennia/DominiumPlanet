@@ -119,16 +119,16 @@ namespace FederacjaPlanet.Models
                 Description = "Sojusz Ksiezycowy czyli zrzeszenie powstałe jako wynik dążeń do uzyskania niezaleznosci przez ksiezyce Saturna, Uranu i Neptuna. Niewiele wiadomo o sytuacji wewnętrznej" +
                 "sojuszu, ale jak donoszą szpiedzy Federacji - wydaje się, że powoli ale skutecznie gospodarka się podności" +
                 "",
-                Budget = 90,
-                Food = 50,
-                Energy = 60,
+                Budget = 900,
+                Food = 200,
+                Energy = 90,
                 PublicSatisfaction = 50,
                 Authority = 0,
 
-                FoodProduction = 30,
-                EnergyProduction = 15,
-                FoodUsage = 30,
-                EnergyUsage = 20,
+                FoodProduction = 72,
+                EnergyProduction = 115,
+                FoodUsage = 70,
+                EnergyUsage = 80,
                 IsIndependent = true,
             };
 
@@ -137,7 +137,6 @@ namespace FederacjaPlanet.Models
             {
                 mercury, venus, mars, earth, jupiter, moonAliance,
             };
-            //tutaj jeszcze jest case ze moonAliance to co najwyzej do negocjacji wiec moze ich wywalic i taksamo mercury
             return planetList;
         }
 
