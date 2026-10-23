@@ -10,28 +10,29 @@ namespace FederacjaPlanet.Contollers
 {
     public class GameController
     {
-        private readonly MainMenu mainMenu = new();
-        private readonly PlanetMenu planetMenu = new();
-        private readonly DecisionMenu decisionMenu = new();
-        private readonly PlanetDetailsView planetDetailsView = new();
-        private readonly FederationStatisticsView federationStatisticsView = new();
-        private readonly DecisionDetailsView decisionDetailsView= new();
-        //private readonly PlayerStatisticsView playerStatistics = new();
+        private readonly StartMenu startMenu = new StartMenu();
+        private readonly MainMenu mainMenu = new MainMenu();
+        private readonly PlanetMenu planetMenu = new PlanetMenu();
+        private readonly DecisionMenu decisionMenu = new DecisionMenu();
+        private readonly PlanetDetailsView planetDetailsView = new PlanetDetailsView();
+        private readonly FederationStatisticsView federationStatisticsView = new FederationStatisticsView();
+        private readonly DecisionDetailsView decisionDetailsView= new DecisionDetailsView();
+        private RaportDetailsView raportView = new RaportDetailsView();
+        private StartView startView = new StartView();
         private GameServices gameServices = new GameServices();
         private GameState gameState = new GameState();
-        private RaportDetailsView raportView = new RaportDetailsView();
         private DecisionServices decisionServices = new DecisionServices();
         private FileGameServices fileGameServices = new FileGameServices();
         private List<Planet> planetList = PlanetCreator.CreatePlanetList();
         private List<Decision> decisionList = DecisionCreator.CreateDecisionList();
         private List<(int, Decision)> raportList = new List<(int, Decision)>();
-        //Decision decision = new Decision();
-
-
         
 
         public void RunProgram()
         {
+            WelcomeScreen();
+
+
             bool running = true;
 
             while (running)
@@ -71,12 +72,12 @@ namespace FederacjaPlanet.Contollers
                             SaveGame();
                             break;
                         }
+                    //case 6:
+                    //    {
+                    //        LoadGame();
+                    //        break;
+                    //    }
                     case 6:
-                        {
-                            LoadGame();
-                            break;
-                        }
-                    case 7:
                         {
                             EndGame();
                             break;
@@ -169,6 +170,15 @@ namespace FederacjaPlanet.Contollers
             Environment.Exit(0);
         }
 
-
+        private void WelcomeScreen()
+        {
+            int choice = startMenu.ShowMenu(gameState);
+            if (choice == 0)
+            {
+                startView.ShowStory();
+            }
+            else if (choice == 1) LoadGame();
+            else EndGame();
+        }
     }
 }

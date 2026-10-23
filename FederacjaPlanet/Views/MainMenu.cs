@@ -22,7 +22,7 @@ namespace FederacjaPlanet.Views
                 "Decyzje",
                 "Zakoncz ture",
                 "Zapisz gre",
-                "Wczytaj gre",
+                //"Wczytaj gre",
                 "Wyjscie"
             }, gameState);
 
