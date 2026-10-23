@@ -126,13 +126,37 @@ namespace FederacjaPlanet.Models
                 option2 = "Zachowaj żywność dla siebie."
             };
 
+            Decision decision9 = new Decision
+            {
+                Name = "Sfinansuj baze badawczą na [] (Jowisz)",
+                Description = "Jednym z głównych problemów księżycy Jowisza jest wysokie bezrobocie. W trakcie wojny wiele instytucji " +
+                "zostało zniszczony. Budowa bazy dałaby coś do roboty rzemieślnikom, a kiedy placówka zostałąby ukończona zatrudniłaby kolejne " +
+                "setki a może i tyesiące. Oczywiście jest to jedynie kropa w morzu potrzeb ludności tych odległych księżycy a mimo to...\n\n" +
+                "Może warto spróbować?",
+                Cost = 600,
+                
+                IsActive = false,
+                GainAuthority = 20,
+                GainPublicSatisfaction = 20,
+                option1 = "Sfinansuj budowę",
+                option2 = "To i tak nie ma sensu"
+            };
+
+            Decision decision10 = new Decision
+            {
+                Name = "Przekieruj energię z Marsa na Jowisz",
+                Description = "Mars ma jej pod dostatkiem. Księżyce Jowisza potrzebują pomocy. Wydaje się to uczciwa umowa.",
+                
+      
+            };
 
 
 
 
         List<Decision> decisionList = new List<Decision>
             {
-                decision0, decision1, decision2, decision3, decision4, decision5, decision6, decision7, decision8
+                decision0, decision1, decision2, decision3, decision4, decision5, decision6, decision7, decision8, 
+            decision9
             };
             
             return decisionList;

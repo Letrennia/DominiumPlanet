@@ -128,7 +128,7 @@ namespace FederacjaPlanet.Contollers
         private void EndTurn()
         {
             gameServices.CallculateResources(planetList);
-            gameServices.NextTurn(gameState);
+            gameServices.NextTurn(gameState, decisionList);
         }
         
         private void SaveGame()
@@ -148,6 +148,19 @@ namespace FederacjaPlanet.Contollers
 
             gameState = saveDataModel.GameState;
             raportList = saveDataModel.Raport;
+
+            if (raportList.Count() == 0) return;
+
+            for (int i = 0; i < raportList.Count(); i++)
+            {
+                string decName = raportList[i].Item2.Name;
+                Decision? dec = decisionList.Find(x => x.Name == decName);
+                if (raportList[i].Item2.IsActive != dec.IsActive)
+                {
+                    dec.IsActive = !dec.IsActive;
+                }
+
+            }
 
         }
 

@@ -68,9 +68,9 @@ namespace FederacjaPlanet.Services
         {
             Planet? planet = planetList.Find(x => x.Name == "Ziemia");
             gameState.Treasury += decision.GainBudgetFrom.Item1;
-            gameState.Dept += Convert.ToInt32(decision.GainBudgetFrom.Item1 * 1.2);
+            gameState.Debt += Convert.ToInt32(decision.GainBudgetFrom.Item1 * 1.2);
             planet?.Authority += decision.GainAuthority;
-            gameState.DeptCount++;
+            gameState.DebtCount++;
         }
         private void BankDecisionPayCredit(Decision decision, GameState gameState, List<Planet> planetList)
         {
@@ -78,12 +78,12 @@ namespace FederacjaPlanet.Services
 
             //splacanie kredytu
             gameState.Treasury -= decision.Cost;
-            gameState.Dept -= decision.Cost;
+            gameState.Debt -= decision.Cost;
             planet?.Authority += decision.GainAuthority;
-            gameState.DeptCount--;
-            if (gameState.Dept <= 0)
+            gameState.DebtCount--;
+            if (gameState.Debt <= 0)
             {
-                gameState.Dept = 0;
+                gameState.Debt = 0;
                 decision.IsActive = false;
             }
             else decision.IsActive = true;
@@ -98,6 +98,21 @@ namespace FederacjaPlanet.Services
             }
 
             decision.IsActive = false;
+        }
+
+        public static void UpdateDecisionList(int turn, List<Decision> decisionList)
+        {
+            if (turn == 2) //mowa dostepna tylko w pierwszej turze
+            {
+                for (int i = 0; i< decisionList.Count; i++)
+                {
+                    if (decisionList[i].Name == "Wygłoś mowę") 
+                    {
+                        decisionList[i].IsActive = false;
+                        break;
+                    }
+                }
+            }
         }
     }
 }

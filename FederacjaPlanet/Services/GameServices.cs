@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using FederacjaPlanet.Models;
+using FederacjaPlanet.Views;
 namespace FederacjaPlanet.Services
 {
     public class GameServices
@@ -24,9 +25,30 @@ namespace FederacjaPlanet.Services
         }
 
 
-        public void NextTurn(GameState gameState)
+        public void NextTurn(GameState gameState, List<Decision> decisionList)
         {
             gameState.Turn++;
+            checkGameConditions(gameState);
+            DecisionServices.UpdateDecisionList(gameState.Turn, decisionList);
+        }
+
+
+        private void checkGameConditions(GameState gameState)
+        {
+            // jesli autorytet spadnie ponizej 20 to np bunt
+            // jezeli bankierzy maja 4 to obalaja gracza
+            // skarbiec NIE MOZE byc pusty
+            if (gameState.Treasury == 0)
+            {
+                ReactionView.GameOverEmptyTreasure();
+                Environment.Exit(0);
+            }
+
+            if (gameState.DebtCount == 4)
+            {
+                ReactionView.GameOverDebt();
+                Environment.Exit(0);
+            }
         }
     }
 }

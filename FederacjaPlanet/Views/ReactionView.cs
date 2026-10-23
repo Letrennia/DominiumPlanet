@@ -45,5 +45,21 @@ namespace FederacjaPlanet.Views
             AnsiConsole.MarkupLine($"[green]Poprawnie wczytano stan gry.[/]");
             Console.ReadKey();
         }
+
+
+        //GAME OVER
+        public static void GameOverEmptyTreasure()
+        {
+            AnsiConsole.MarkupLine($"[red bold] GAME OVER.[/]");
+            AnsiConsole.MarkupLine($"[red] Skarbiec nie może pozostać pusty.[/]");
+            Console.ReadKey();
+        }
+
+        public static void GameOverDebt()
+        {
+            AnsiConsole.MarkupLine($"[red bold] GAME OVER.[/]");
+            AnsiConsole.MarkupLine($"[red] Bankierzy wyczuli w tobie słabość. Zostałeś obalony. [/]");
+            Console.ReadKey();
+        }
     }
 }
