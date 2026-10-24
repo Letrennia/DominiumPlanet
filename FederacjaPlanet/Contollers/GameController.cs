@@ -75,11 +75,6 @@ namespace DominiumPlanet.Contollers
                             SaveGame();
                             break;
                         }
-                    //case 6:
-                    //    {
-                    //        LoadGame();
-                    //        break;
-                    //    }
                     case 6:
                         {
                             EndGame();
@@ -132,7 +127,7 @@ namespace DominiumPlanet.Contollers
         private void EndTurn()
         {
             gameServices.CallculateResources(planetList);
-            gameServices.NextTurn(gameState, decisionList);
+            gameServices.NextTurn(gameState, decisionList, planetList);
         }
         
         private void SaveGame()
@@ -153,15 +148,15 @@ namespace DominiumPlanet.Contollers
             gameState = saveDataModel.GameState;
             raportList = saveDataModel.Raport;
 
-            if (raportList.Count() == 0) return;
+            if (raportList?.Count() == 0) return;
 
-            for (int i = 0; i < raportList.Count(); i++)
+            for (int i = 0; i < raportList?.Count(); i++)
             {
                 string decName = raportList[i].Item2.Name;
                 Decision? dec = decisionList.Find(x => x.Name == decName);
-                if (raportList[i].Item2.IsActive != dec.IsActive)
+                if (raportList[i].Item2.IsActive != dec?.IsActive)
                 {
-                    dec.IsActive = !dec.IsActive;
+                    dec?.IsActive = !dec.IsActive;
                 }
 
             }

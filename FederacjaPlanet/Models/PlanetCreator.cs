@@ -18,7 +18,6 @@ namespace DominiumPlanet.Models
                 "Dziś Merkury spowija mgiełka tajemnicy. Wszyscy znają legendy, o tym że pod jałową i zrogowaciałą powierznią znajdują się bezcenne surowce.\n\n" +
                 "Ile prawdy kryje się w pogłoskach? \n\nOstatnia ekspedycja badawcza wyruszyła na Merkurego ponad 150 lat temu, a kontakt z załogą stracono zaledwie 20 minut po wejściu w zrujnowaną " +
                 "atmosfere planety. Ostatni odebrany komunikat brzmiał 'temperatura wewnątrz kokpitu 23 stopnie...'.",
-                Budget = 0,
                 Food = 0,
                 Energy = 0,
                 PublicSatisfaction = 0,
@@ -39,11 +38,10 @@ namespace DominiumPlanet.Models
                 "Podczas wojny, chociaż Wenus oficjalnie poparła władzę centralną, to tajemnicą poliszynela pozostaje fakt, że lokalne elity handlowały ze wszystkimi, którzy byli w stanie zapłacić.\n\n " +
                 "Dziś, Wenus zamiast szmaragdem w koronie, pozostaje raczej cierniem w boku rządzących, gdzie zamiast szukać wspólnego dobra każdy liczy na szybkie napełnienie własnych kieszeni, a " +
                 "może i uzyskanie czegoś więcej?",
-                Budget = 300,
                 Food = 200,
                 Energy = 120,
                 PublicSatisfaction = 85,
-                Authority = 45,
+                Authority = 30,
 
                 FoodProduction = 100,
                 EnergyProduction = 15,
@@ -63,11 +61,10 @@ namespace DominiumPlanet.Models
                 "Nierówności społeczne są większe niż kiedykolwiek, a ludzie przepracowani i nieodżywieni.\n" +
                 "Właścicieli fabryk to nie przejmuje - w końcu nowych pracowników ciągle przybywa, a wyniki nigdy nie były lepsze!\n\n" +
                 "Ile czasu minie nim głodujący wyjdą na ulice?",
-                Budget = 50,
                 Food = 40,
                 Energy = 200,
-                PublicSatisfaction = 40,
-                Authority = 56,
+                PublicSatisfaction = 35,
+                Authority = 50,
 
                 FoodProduction = 10,
                 EnergyProduction = 70,
@@ -85,11 +82,10 @@ namespace DominiumPlanet.Models
                 "ma tutaj swój oddział - w tym wszystkie najważniejsze banki. " +
                 "Natomiast błędem byłoby zakładać, że jest to arkadia - w każdym kącie może czyhać niebezpieczeństwo, a każdy uśmiech skrywać drwinę lub potencjalny spisek.\n\n" +
                 "O bezpieczeństwo Władcy Dominium troszczy się gwardia pryboczna. Może podniosłoby Cię to na duchu, gdyby nie świadomość, że połowa Twoich poprzedników została przez nią obalona.",
-                Budget = 100,
                 Food = 90,
                 Energy = 80,
                 PublicSatisfaction = 60,
-                Authority = 50,
+                Authority = 45,
 
                 FoodProduction = 10,
                 EnergyProduction = 10,
@@ -106,7 +102,6 @@ namespace DominiumPlanet.Models
                 "Teraz gdy podpisano rozejm, a 80% infrastruktury zostało zniszczone, mieszkańcy mogą jedynie liczyć na pomoc innych planet i Plan Odbudowy zapowiedziany jeszcze za panowania Hadriana.\n\n" +
                 "Wielu uważa, że Księżyce Jowisza już nigdy nie odzyskają dawnej świetności i lepiej byłoby zainwestować w terraformacje innego miejsca zamiast marnować fundusze na to gruzowisko.\n\n" +
                 "Czy Ksiezyce Jowisza mają jeszcze szanse na lepszą przyszłość?",
-                Budget = 30,
                 Food = 20,
                 Energy = 30,
                 PublicSatisfaction = 30,
@@ -124,7 +119,6 @@ namespace DominiumPlanet.Models
                 Name = "SK",
                 Description = "Sojusz Ksieżycowy, czyli zrzeszenie powstałe w wyniku dążeń do uzyskania niepodległości przez ksieżyce Saturna, Uranu i Neptuna. Niewiele wiadomo o sytuacji wewnętrznej" +
                 "Sojuszu, ale jak donoszą szpiedzy Dominium - gospodarka powoli, lecz skutecznie się odbudowuje.",
-                Budget = 900,
                 Food = 200,
                 Energy = 90,
                 PublicSatisfaction = 50,

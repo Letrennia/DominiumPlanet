@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using DominiumPlanet.Models;
 using DominiumPlanet.Views;
@@ -25,20 +26,23 @@ namespace DominiumPlanet.Services
         }
 
 
-        public void NextTurn(GameState gameState, List<Decision> decisionList)
+        public void NextTurn(GameState gameState, List<Decision> decisionList, List<Planet> planetList)
         {
             gameState.Turn++;
-            checkGameConditions(gameState);
+            if (gameState.Turn == 10)
+            {
+                ReactionView.GameWon();
+                Environment.Exit(0);
+            }
+            gameState.Treasury += 150;
+            checkGameConditions(gameState, planetList);
             DecisionServices.UpdateDecisionList(gameState.Turn, decisionList);
             AnimationView.AnimationTurn(gameState.Turn);
         }
 
 
-        private void checkGameConditions(GameState gameState)
+        private void checkGameConditions(GameState gameState, List<Planet> planetList)
         {
-            // jesli autorytet spadnie ponizej 20 to np bunt
-            // jezeli bankierzy maja 4 to obalaja gracza
-            // skarbiec NIE MOZE byc pusty
             if (gameState.Treasury == 0)
             {
                 ReactionView.GameOverEmptyTreasure();
@@ -49,6 +53,35 @@ namespace DominiumPlanet.Services
             {
                 ReactionView.GameOverDebt();
                 Environment.Exit(0);
+            }
+
+
+
+            foreach (Planet planet in planetList)
+            {
+                if (planet.IsIndependent == true) continue;
+                if (planet.Authority < 10)
+                {
+                    ReactionView.GameOverIndependece(planet);
+                    Environment.Exit(0);
+                }
+                if (planet.Food < 20)
+                {
+                    planet.PublicSatisfaction -= 10;
+                    if (planet.PublicSatisfaction < 0) planet.PublicSatisfaction = 0;
+                }
+
+                if (planet.Energy < 20) planet.PublicSatisfaction -= 10;
+                {
+                    planet.PublicSatisfaction -= 10;
+                    if (planet.PublicSatisfaction < 0) planet.PublicSatisfaction = 0;
+                }
+
+                if (planet.PublicSatisfaction <= 15)
+                {
+                    planet.Authority -= 5;
+                    //bunt
+                }
             }
         }
     }

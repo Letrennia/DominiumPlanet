@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using DominiumPlanet.Models;
 
 namespace DominiumPlanet.Views
 {
@@ -46,19 +47,32 @@ namespace DominiumPlanet.Views
             Console.ReadKey();
         }
 
+        public static void GameWon()
+        {
+            AnsiConsole.MarkupLine($"[green]Udało ci się przetrwać 10 cykli!.[/]");
+            Console.ReadKey();
+        }
+
 
         //GAME OVER
         public static void GameOverEmptyTreasure()
         {
-            AnsiConsole.MarkupLine($"[red bold] GAME OVER.[/]");
-            AnsiConsole.MarkupLine($"[red] Skarbiec nie może pozostać pusty.[/]");
+            AnsiConsole.MarkupLine($"[red bold]GAME OVER.[/]");
+            AnsiConsole.MarkupLine($"[red]Skarbiec nie może pozostać pusty.[/]");
             Console.ReadKey();
         }
 
         public static void GameOverDebt()
         {
-            AnsiConsole.MarkupLine($"[red bold] GAME OVER.[/]");
-            AnsiConsole.MarkupLine($"[red] Bankierzy wyczuli w tobie słabość. Zostałeś obalony. [/]");
+            AnsiConsole.MarkupLine($"[red bold]GAME OVER.[/]");
+            AnsiConsole.MarkupLine($"[red]Bankierzy wyczuli w tobie słabość. Zostałeś obalony. [/]");
+            Console.ReadKey();
+        }
+
+        public static void GameOverIndependece(Planet planet)
+        {
+            AnsiConsole.MarkupLine($"[red bold]GAME OVER.[/]");
+            AnsiConsole.MarkupLine($"[red]{planet.Name} odłączyło się od Sol Dominium. Twoja pozycja nie jest już respektowana. [/]");
             Console.ReadKey();
         }
     }

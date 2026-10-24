@@ -28,7 +28,6 @@ namespace DominiumPlanet.Views
             var table = new Table();
             table.Title(title);
             table.AddColumn("Planeta");
-            table.AddColumn("Budzet");
             table.AddColumn("Zywnosc");
             table.AddColumn("Energia");
             table.AddColumn("Zadowolenie spoleczne");
@@ -62,7 +61,6 @@ namespace DominiumPlanet.Views
             
             table.AddRow(
                 planet.Name,
-                planet.Budget.ToString(),
                 food,
                 energy,
                 satisfaction,

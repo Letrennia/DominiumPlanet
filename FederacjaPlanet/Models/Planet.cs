@@ -8,7 +8,6 @@ namespace DominiumPlanet.Models
     {
         public string Name { get; set; } = "";
         public string Description { get; set; } = "";
-        public int Budget { get; set; }
         public int Food { get; set; }
         public int Energy { get; set; }
         public int PublicSatisfaction { get; set; }

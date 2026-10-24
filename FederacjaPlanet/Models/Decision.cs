@@ -10,7 +10,7 @@ namespace DominiumPlanet.Models
         public string Description { get; set; } = "";
         public string PlanetName { get; set; } = "";
         public int Cost { get; set; }
-        public (int, string, string) GainBudgetFrom { get; set; }
+        public int GainBudgetFrom { get; set; }
         public int GainPublicSatisfaction { get; set; }
         public int GainAuthority { get; set; }
         public (int, string, string) FoodDistribution { get; set; } //ile, od, do
