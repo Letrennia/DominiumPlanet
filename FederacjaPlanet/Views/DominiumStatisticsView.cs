@@ -48,13 +48,25 @@ namespace DominiumPlanet.Views
 
         private void addRowToTable(Table table, Planet planet)
         {
+            string food = planet.Food.ToString();
+            string energy = planet.Energy.ToString();
+            string satisfaction = planet.PublicSatisfaction.ToString();
+            string authority = planet.Authority.ToString();
+            if (planet.IsIndependent == false)
+            {
+                if (planet.Food < 20) food = $"[red]{planet.Food.ToString()} [/]";
+                if (planet.Energy < 20) energy = $"[red]{planet.Energy.ToString()} [/]";
+                if (planet.PublicSatisfaction < 20) satisfaction = $"[red]{planet.PublicSatisfaction.ToString()} [/]";
+                if (planet.Authority< 20) authority = $"[red]{planet.Authority.ToString()} [/]";
+            }
+            
             table.AddRow(
                 planet.Name,
                 planet.Budget.ToString(),
-                planet.Food.ToString(),
-                planet.Energy.ToString(),
-                planet.PublicSatisfaction.ToString(),
-                planet.Authority.ToString(),
+                food,
+                energy,
+                satisfaction,
+                authority,
                 planet.FoodProduction.ToString(),
                 planet.EnergyProduction.ToString(),
                 planet.FoodUsage.ToString(),

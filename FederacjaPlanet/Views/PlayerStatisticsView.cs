@@ -8,7 +8,7 @@ namespace DominiumPlanet.Views
         {
             AnsiConsole.Write(new Rule($"[yellow]Tura: {gameState.Turn}[/] [grey]|[/] " +
                 $"[yellow]Skarb państwa: {gameState.Treasury}[/] [grey]|[/] " +
-                $"[yellow]Zadluzenie: {gameState.Debt}[/]").RuleStyle("grey"));
+                $"[yellow]Zadłużenie: {gameState.Debt}[/]").RuleStyle("grey"));
             AnsiConsole.Write("\n");
         }
     }

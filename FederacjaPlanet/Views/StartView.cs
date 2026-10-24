@@ -13,6 +13,7 @@ namespace DominiumPlanet.Views
             GameModel gameModel = new GameModel();
             AnsiConsole.MarkupLine($"[yellow bold]{gameModel.Title}[/]\n");
             AnsiConsole.MarkupLine($"{gameModel.Story}\n");
+            AnsiConsole.MarkupLine($"{gameModel.Rules}\n");
 
             AnsiConsole.Prompt(
                 new SelectionPrompt<string>()
