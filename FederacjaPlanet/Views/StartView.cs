@@ -11,7 +11,7 @@ namespace FederacjaPlanet.Views
         public void ShowStory()
         {
             GameModel gameModel = new GameModel();
-            AnsiConsole.MarkupLine($"[magenta bold]{gameModel.Title}[/]\n");
+            AnsiConsole.MarkupLine($"[yellow bold]{gameModel.Title}[/]\n");
             AnsiConsole.MarkupLine($"{gameModel.Story}\n");
 
             AnsiConsole.Prompt(

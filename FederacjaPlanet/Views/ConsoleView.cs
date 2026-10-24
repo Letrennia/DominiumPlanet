@@ -13,7 +13,7 @@ namespace FederacjaPlanet.Views
             if (playerBar == true) playerStatisticsView.ShowPlayerDetails(gameState);
             string choice = AnsiConsole.Prompt(
                 new SelectionPrompt<string>()
-                .Title($"[magenta]{title}[/]")
+                .Title($"[bold yellow]{title}[/]")
                 .WrapAround()
                 .AddChoices(options));
 
@@ -26,7 +26,7 @@ namespace FederacjaPlanet.Views
             if (playerBar == true) playerStatisticsView.ShowPlayerDetails(gameState);
             string choice = AnsiConsole.Prompt(
                 new SelectionPrompt<string>()
-                .Title($"[magenta]{title}[/]")
+                .Title($"[bold yellow]{title}[/]")
                 .WrapAround()
                 .AddChoices(options));
 

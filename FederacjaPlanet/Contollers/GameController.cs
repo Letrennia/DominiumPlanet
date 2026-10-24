@@ -30,7 +30,10 @@ namespace FederacjaPlanet.Contollers
 
         public void RunProgram()
         {
+            AnimationView.AnimationPlanets();
+            AnsiConsole.Clear();
             WelcomeScreen();
+            
 
 
             bool running = true;
@@ -176,8 +179,13 @@ namespace FederacjaPlanet.Contollers
             if (choice == 0)
             {
                 startView.ShowStory();
+                AnimationView.AnimationTurn(1);
             }
-            else if (choice == 1) LoadGame();
+            else if (choice == 1) 
+            {
+                LoadGame();
+                AnimationView.AnimationTurn(gameState.Turn);
+            }
             else EndGame();
         }
     }

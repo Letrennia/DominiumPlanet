@@ -11,7 +11,7 @@ namespace FederacjaPlanet.Views
 
         public int ShowMenu(GameState gameState)
         {
-            return consoleView.Show("Aby wybrać opcję użyj strzałek góra dół. Aby zatwierdzić opcje wciśnij enter.", false, new[]
+            return consoleView.Show("Witaj w SOL DOMINIUM!\n\nAby wybrać opcję użyj strzałek góra dół. Aby zatwierdzić opcje wciśnij enter.", false, new[]
             {
                 "Nowa gra",
                 "Wczytaj gre",

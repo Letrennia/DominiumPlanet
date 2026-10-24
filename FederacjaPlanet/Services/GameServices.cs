@@ -30,6 +30,7 @@ namespace FederacjaPlanet.Services
             gameState.Turn++;
             checkGameConditions(gameState);
             DecisionServices.UpdateDecisionList(gameState.Turn, decisionList);
+            AnimationView.AnimationTurn(gameState.Turn);
         }
 
 

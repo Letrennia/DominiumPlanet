@@ -27,10 +27,10 @@ namespace FederacjaPlanet.Views
                 if (whichTurn != raportList[i].Item1)
                 {
                     whichTurn = raportList[i].Item1;
-                    AnsiConsole.MarkupLine($"\n[bold magenta]TURA {whichTurn}[/]\n");
+                    AnsiConsole.MarkupLine($"\n[bold yellow]TURA {whichTurn}[/]\n");
                 }
 
-                AnsiConsole.MarkupLine($"[magenta]-[/] {raportList[i].Item2.Name}   Koszt: {raportList[i].Item2.Cost}\n");
+                AnsiConsole.MarkupLine($"[yellow]-[/] {raportList[i].Item2.Name}   Koszt: {raportList[i].Item2.Cost}\n");
             }
 
             AnsiConsole.Prompt(
