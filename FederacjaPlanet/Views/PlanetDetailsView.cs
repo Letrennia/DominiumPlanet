@@ -6,10 +6,10 @@ namespace DominiumPlanet.Views
     {
         public void ShowPlanetDetails(Planet planet)
         {
-            AnsiConsole.MarkupLine($"[yellow bold] {planet.Name} [/]\n");
+            AnsiConsole.MarkupLine($"[yellow bold]{planet.Name} [/]");
             AnsiConsole.WriteLine($"\n{planet.Description}\n");
 
-            if (planet.IsIndependent == false) AnsiConsole.MarkupLine("[bold] Planeta [green]nalezy[/] do Dominium[/]");
+            if (planet.IsIndependent == false) AnsiConsole.MarkupLine("[bold]Planeta [green]nalezy[/] do Dominium[/]");
             else AnsiConsole.MarkupLine("[bold]Planeta [red]NIE [/]nalezy do Dominium[/]");
 
 
