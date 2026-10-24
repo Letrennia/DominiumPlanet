@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace FederacjaPlanet.Models
+namespace DominiumPlanet.Models
 {
     public class GameModel
     {

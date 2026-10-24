@@ -1,6 +1,6 @@
-﻿using FederacjaPlanet.Models;
+﻿using DominiumPlanet.Models;
 using Spectre.Console;
-namespace FederacjaPlanet.Views
+namespace DominiumPlanet.Views
 {
     internal class PlanetDetailsView
     {
@@ -9,8 +9,8 @@ namespace FederacjaPlanet.Views
             AnsiConsole.MarkupLine($"[yellow bold] {planet.Name} [/]\n");
             AnsiConsole.WriteLine($"\n{planet.Description}\n");
 
-            if (planet.IsIndependent == false) AnsiConsole.MarkupLine("[bold] Planeta [green]nalezy[/] do Federacji[/]");
-            else AnsiConsole.MarkupLine("[bold]Planeta [red]NIE [/]nalezy do Federacji[/]");
+            if (planet.IsIndependent == false) AnsiConsole.MarkupLine("[bold] Planeta [green]nalezy[/] do Dominium[/]");
+            else AnsiConsole.MarkupLine("[bold]Planeta [red]NIE [/]nalezy do Dominium[/]");
 
 
             string drink = AnsiConsole.Prompt(

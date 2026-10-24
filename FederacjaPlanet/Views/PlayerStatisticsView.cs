@@ -1,6 +1,6 @@
-﻿using FederacjaPlanet.Models;
+﻿using DominiumPlanet.Models;
 using Spectre.Console;
-namespace FederacjaPlanet.Views
+namespace DominiumPlanet.Views
 {
     public class PlayerStatisticsView
     {

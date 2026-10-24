@@ -4,7 +4,7 @@ using System.Text;
 
 
 
-namespace FederacjaPlanet.Models
+namespace DominiumPlanet.Models
 {
     public static class PlanetCreator
     {

@@ -1,12 +1,12 @@
-﻿using FederacjaPlanet.Models;
-using FederacjaPlanet.Views;
+﻿using DominiumPlanet.Models;
+using DominiumPlanet.Views;
 using Spectre.Console;
 using System;
 using System.Collections.Generic;
 using System.Numerics;
 using System.Text;
 
-namespace FederacjaPlanet.Services
+namespace DominiumPlanet.Services
 {
     internal class DecisionServices
     {

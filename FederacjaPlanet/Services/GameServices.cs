@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using FederacjaPlanet.Models;
-using FederacjaPlanet.Views;
-namespace FederacjaPlanet.Services
+using DominiumPlanet.Models;
+using DominiumPlanet.Views;
+namespace DominiumPlanet.Services
 {
     public class GameServices
     {

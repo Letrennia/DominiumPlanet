@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Text;
 using Newtonsoft.Json;
 using System.Text.Json;
-using FederacjaPlanet.Models;
+using DominiumPlanet.Models;
 using Spectre.Console;
-using FederacjaPlanet.Views;
+using DominiumPlanet.Views;
 
-namespace FederacjaPlanet.Services
+namespace DominiumPlanet.Services
 {
     internal class FileGameServices
     {

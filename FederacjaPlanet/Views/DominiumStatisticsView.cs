@@ -1,15 +1,15 @@
-﻿using FederacjaPlanet.Models;
+﻿using DominiumPlanet.Models;
 using Spectre.Console;
 
-namespace FederacjaPlanet.Views
+namespace DominiumPlanet.Views
 {
-    public class FederationStatisticsView
+    public class DominiumStatisticsView
     {
         public void ShowFederationStatistics(List<Planet> planetList)
         {
             
-            var table1 = createTable("Federacja Planet - Układ Centralny", planetList, false);
-            var table2 = createTable("Planety spoza Federacji", planetList, true);
+            var table1 = createTable("Sol Dominium - Układ Centralny", planetList, false);
+            var table2 = createTable("Planety spoza Dominium", planetList, true);
 
             AnsiConsole.Write(table1);
             AnsiConsole.Write(table2);

@@ -1,12 +1,12 @@
-﻿using FederacjaPlanet.Views;
+﻿using DominiumPlanet.Views;
 using System;
 using System.Collections.Generic;
 using System.Text;
-using FederacjaPlanet.Models;
-using FederacjaPlanet.Services;
+using DominiumPlanet.Models;
+using DominiumPlanet.Services;
 using Spectre.Console;
 
-namespace FederacjaPlanet.Contollers
+namespace DominiumPlanet.Contollers
 {
     public class GameController
     {
@@ -15,7 +15,7 @@ namespace FederacjaPlanet.Contollers
         private readonly PlanetMenu planetMenu = new PlanetMenu();
         private readonly DecisionMenu decisionMenu = new DecisionMenu();
         private readonly PlanetDetailsView planetDetailsView = new PlanetDetailsView();
-        private readonly FederationStatisticsView federationStatisticsView = new FederationStatisticsView();
+        private readonly DominiumStatisticsView federationStatisticsView = new DominiumStatisticsView();
         private readonly DecisionDetailsView decisionDetailsView= new DecisionDetailsView();
         private RaportDetailsView raportView = new RaportDetailsView();
         private StartView startView = new StartView();

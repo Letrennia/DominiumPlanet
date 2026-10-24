@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace FederacjaPlanet.Views
+namespace DominiumPlanet.Views
 {
     internal class AnimationView
     {
@@ -99,7 +99,6 @@ namespace FederacjaPlanet.Views
         {
             AnsiConsole.Clear();
             AnsiConsole.Write(new Align(new Text($"{mess}"), HorizontalAlignment.Center));
-            //Console.ReadKey();
             Thread.Sleep(1000);
             AnsiConsole.Clear();
         }

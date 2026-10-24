@@ -1,9 +1,9 @@
-﻿using FederacjaPlanet.Models;
+﻿using DominiumPlanet.Models;
 using Spectre.Console;
 using System;
 using System.Collections.Generic;
 using System.Text;
-namespace FederacjaPlanet.Views
+namespace DominiumPlanet.Views
 {
     public class ConsoleView()
     {

@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.Text;
 
-using FederacjaPlanet.Models;
-namespace FederacjaPlanet.Models
+using DominiumPlanet.Models;
+namespace DominiumPlanet.Models
 {
     public class DecisionCreator
     {
