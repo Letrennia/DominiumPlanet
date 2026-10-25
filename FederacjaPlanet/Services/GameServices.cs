@@ -54,7 +54,7 @@ namespace DominiumPlanet.Services
                 Environment.Exit(0);
             }
 
-            if (gameState.DebtCount == 4)
+            if (gameState.DebtCount == 3)
             {
                 ReactionView.GameOverDebt();
                 Environment.Exit(0);

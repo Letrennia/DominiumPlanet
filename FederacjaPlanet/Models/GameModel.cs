@@ -14,7 +14,7 @@ namespace DominiumPlanet.Models
             "Hadrian nie był dobrym Władcą. Pozostawił po sobie zniszczenie, głód i samowolkę. Podpisał upokażający rozejm i pozwolił księżycom Saturna, Urana i Neptuna na odłączenie od Dominium. " +
             "Władza centralna nigdy była słabsza a skarbiec bardziej pusty. Nie będzie łatwo naprawić wyrządzone szkody, ale jeśli nawet nie spróbujesz to najpewniej podzielisz los Hadriana.\n\n" +
             "Stąpasz po niepwenym gruncie, ale wiesz jedno - jeśli przetrwasz pierwsze 10 cykli panowania, Twoje szanse na utrzymanie się na tronie znacznie wzrosną.";
-        public string Rules { get; set; } = "Twoim celem jest przetrwać pierwsze 10 cykli (tur) i niedopuścić do obalenia przez wrogie stronnictwo. Aby utrzymać się na tronie musisz:\n" +
+        public string Rules { get; set; } = "Twoim celem jest przetrwać pierwsze 9 cykli (tur) i niedopuścić do obalenia przez wrogie stronnictwo. Aby utrzymać się na tronie musisz:\n" +
             "[yellow]-[/] wzmocnić autorytet - słaba pozycja Władcy prowadzi do samowolki\n" +
             "[yellow]-[/] utrzymać poparcie społeczne - niskie poparcie może doprowadzić do buntu planety\n" +
             "[yellow]-[/] zadbać o stan planet - jako Władca Dominium twoim zadaniem jest zapewnieniem poddanym odpowiedniej ilości żywności, energii oraz godziwych warunków życia\n\n"+

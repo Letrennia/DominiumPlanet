@@ -45,7 +45,7 @@ namespace DominiumPlanet.Services
                 Planet? planetTo = planetList.Find(x => x.Name == decision.FoodDistribution.Item3);
 
                 planetResource?.Food -= decision.FoodDistribution.Item1;
-                planetTo?.Food += decision.FoodDistribution.Item1; //trzeba dodac moze zabezpieczenie
+                planetTo?.Food += decision.FoodDistribution.Item1;
             }
 
             if (decision.EnergyDistribution.Item3 != "")
@@ -148,6 +148,7 @@ namespace DominiumPlanet.Services
                         for (int i = 0; i < decisionList.Count; i++)
                         {
                             if (decisionList[i].Name == "Zakup zapas energii dla Ziemi" ||
+                                decisionList[i].Name == "Dofinansuj ośrodki kultury na Jowiszu" ||
                                 decisionList[i].Name == "Przekieruj energię z Marsa na Jowisz")
                                 decisionList[i].IsActive = true;
                         }
@@ -157,7 +158,8 @@ namespace DominiumPlanet.Services
                     {
                         for (int i = 0; i < decisionList.Count; i++)
                         {
-                            if (decisionList[i].Name == "Przyślij część żywności na Mars")
+                            if (decisionList[i].Name == "Przyślij część żywności na Mars"  ||
+                                decisionList[i].Name == "Zakup żywności na Ziemię")
                                 decisionList[i].IsActive = true;
                         }
                         break;
@@ -166,7 +168,28 @@ namespace DominiumPlanet.Services
                     {
                         for (int i = 0; i < decisionList.Count; i++)
                         {
-                            
+                            if (decisionList[i].Name == "Mieszkania socjalne na Marsie" ||
+                                decisionList[i].Name == "Gala")
+                                decisionList[i].IsActive = true;
+                        }
+                        break;
+                    }
+                case 7:
+                    {
+                        for (int i = 0; i < decisionList.Count; i++)
+                        {
+                            if (decisionList[i].Name == "Pośrednicz w wymianie" ||
+                                decisionList[i].Name == "Modernizacja ziemskiej floty")
+                                decisionList[i].IsActive = true;
+                        }
+                        break;
+                    }
+                case 8:
+                    {
+                        for (int i = 0; i < decisionList.Count; i++)
+                        {
+                            if (decisionList[i].Name == "Akt posłuszeństwa")
+                                decisionList[i].IsActive = true;
                         }
                         break;
                     }
