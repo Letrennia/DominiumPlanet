@@ -24,6 +24,23 @@ namespace DominiumPlanet.Views
                 .WrapAround()
                 .AddChoices("Kontynuuj"));
         }
+        public static void Riot(string planetName, int money)
+        {
+            AnsiConsole.Prompt(
+                new SelectionPrompt<string>()
+                .Title($"[red]Na {planetName} wybuchły zamieszki. Od tej pory dochód Skarbca będzie mniejszy o {money}. Jeśli nie zapanujesz nad sytuacją autorytet władzy centralnej będzie " +
+                $"stopniowo malał.[/]")
+                .WrapAround()
+                .AddChoices("Kontynuuj"));
+        }
+        public static void RiotEnded(string planetName, int money)
+        {
+            AnsiConsole.Prompt(
+                new SelectionPrompt<string>()
+                .Title($"[green]Zamieszki na {planetName} chwilowo ustały. Dochód Skarbca zwiększy się o {money}.[/]") 
+                .WrapAround()
+                .AddChoices("Kontynuuj"));
+        }
 
         public static void NegativeSave(Exception ex)
         {

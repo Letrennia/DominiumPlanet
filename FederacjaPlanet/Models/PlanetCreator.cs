@@ -28,6 +28,7 @@ namespace DominiumPlanet.Models
                 FoodUsage = 0,
                 EnergyUsage = 0,
                 IsIndependent = true,
+                Riot = false
             };
 
             Planet venus = new Planet
@@ -48,6 +49,7 @@ namespace DominiumPlanet.Models
                 FoodUsage = 20,
                 EnergyUsage = 10,
                 IsIndependent = false,
+                Riot = false
             };
 
             Planet mars = new Planet
@@ -71,17 +73,18 @@ namespace DominiumPlanet.Models
                 FoodUsage = 20,
                 EnergyUsage = 20,
                 IsIndependent = false,
+                Riot = false
             };
 
             Planet earth = new Planet
             {
                 Name = "Ziemia",
-                Description = "To właśnie od tej planety wszystko się zaczęło. Z niej wyruszyły pierwsze ekspedycje badawcze, a później statki pasażerskie i towarowe." +
+                Description = "To właśnie od tej planety wszystko się zaczęło. Z niej wyruszyły pierwsze ekspedycje badawcze, a później statki pasażerskie i towarowe. " +
                 "Nic więc dziwnego, że to Ziemia została stolicą Dominium i to właśnie tutaj znajduje się główna siedziba Władcy.\n\n" +
                 "Pomimo upływu lat i wyczerpania surowców, Ziemia nie jest jednak jedynie reliktem przeszłości - dzięki swojej długiej historii i prestiżowi, wiele firm i instytucji " +
                 "ma tutaj swój oddział - w tym wszystkie najważniejsze banki. " +
                 "Natomiast błędem byłoby zakładać, że jest to arkadia - w każdym kącie może czyhać niebezpieczeństwo, a każdy uśmiech skrywać drwinę lub potencjalny spisek.\n\n" +
-                "O bezpieczeństwo Władcy Dominium troszczy się gwardia pryboczna. Może podniosłoby Cię to na duchu, gdyby nie świadomość, że połowa Twoich poprzedników została przez nią obalona.",
+                "O bezpieczeństwo Władcy Dominium troszczy się Gwardia Przyboczna. Może podniosłoby Cię to na duchu, gdyby nie świadomość, że połowa Twoich poprzedników została przez nią obalona.",
                 Food = 90,
                 Energy = 80,
                 PublicSatisfaction = 60,
@@ -92,6 +95,7 @@ namespace DominiumPlanet.Models
                 FoodUsage = 20,
                 EnergyUsage = 25,
                 IsIndependent = false,
+                Riot = false
             };
 
             Planet jupiter = new Planet
@@ -110,8 +114,9 @@ namespace DominiumPlanet.Models
                 FoodProduction = 5,
                 EnergyProduction = 5,
                 FoodUsage = 10,
-                EnergyUsage = 5,
+                EnergyUsage = 10,
                 IsIndependent = false,
+                Riot = false
             };
 
             Planet moonAliance = new Planet
@@ -129,6 +134,7 @@ namespace DominiumPlanet.Models
                 FoodUsage = 70,
                 EnergyUsage = 80,
                 IsIndependent = true,
+                Riot = false
             };
 
 

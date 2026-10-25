@@ -18,7 +18,7 @@ namespace DominiumPlanet.Models
             "[yellow]-[/] wzmocnić autorytet - słaba pozycja Władcy prowadzi do samowolki\n" +
             "[yellow]-[/] utrzymać poparcie społeczne - niskie poparcie może doprowadzić do buntu planety\n" +
             "[yellow]-[/] zadbać o stan planet - jako Władca Dominium twoim zadaniem jest zapewnieniem poddanym odpowiedniej ilości żywności, energii oraz godziwych warunków życia\n\n"+
-            "Wybierając opcję 'Zakończ turę' mija jeden cykl - w jego trakcie do Twojego skarbca zostaną dodane fundusze z podatków (200). Każda planeta rozlicza w tym czasie swój własny bilans " +
+            "Wybierając opcję 'Zakończ turę' mija jeden cykl - w jego trakcie do Twojego skarbca zostaną dodane fundusze z podatków (150). Każda planeta rozlicza w tym czasie swój własny bilans " +
             "zużycia żywności i energii. [red]NIE możesz pozwolić na to by skarbiec był pusty podczas tego czasu.[/]"
             ;
 

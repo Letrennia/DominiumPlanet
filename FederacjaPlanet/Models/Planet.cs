@@ -18,6 +18,7 @@ namespace DominiumPlanet.Models
         public int FoodUsage { get; set; }
         public int EnergyUsage { get; set; }
         public bool IsIndependent { get; set; }
+        public bool Riot {  get; set; }
 
 
     }

@@ -34,7 +34,12 @@ namespace DominiumPlanet.Services
             {
                 string filename = Path.GetFullPath(Path.Combine(AppContext.BaseDirectory, "../../../Data/save_username.json"));
                 string data = File.ReadAllText(filename);
-                SaveDataModel? saveDataModel = JsonConvert.DeserializeObject<SaveDataModel>(data);
+                //SaveDataModel? saveDataModel = JsonConvert.DeserializeObject<SaveDataModel>(data);
+                SaveDataModel? saveDataModel = JsonConvert.DeserializeObject<SaveDataModel>(
+                    data, new JsonSerializerSettings
+                    {
+                        ObjectCreationHandling = ObjectCreationHandling.Replace
+                    });
                 ReactionView.PositiveRead();
                 return saveDataModel;
             }

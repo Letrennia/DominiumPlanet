@@ -20,6 +20,10 @@ namespace DominiumPlanet.Services
                     planetList[i].Food += planetList[i].FoodProduction;
                     planetList[i].Food -= planetList[i].FoodUsage;
 
+                    if(planetList[i].Food < 0) planetList[i].Food = 0;
+                    if(planetList[i].Energy < 0) planetList[i].Energy = 0;
+
+
                 }
 
             }
@@ -28,14 +32,15 @@ namespace DominiumPlanet.Services
 
         public void NextTurn(GameState gameState, List<Decision> decisionList, List<Planet> planetList)
         {
+
             gameState.Turn++;
             if (gameState.Turn == 10)
             {
                 ReactionView.GameWon();
                 Environment.Exit(0);
             }
-            gameState.Treasury += 150;
             checkGameConditions(gameState, planetList);
+            gameState.Treasury += gameState.Income;
             DecisionServices.UpdateDecisionList(gameState.Turn, decisionList);
             AnimationView.AnimationTurn(gameState.Turn);
         }
@@ -56,10 +61,11 @@ namespace DominiumPlanet.Services
             }
 
 
-
             foreach (Planet planet in planetList)
             {
                 if (planet.IsIndependent == true) continue;
+                RiotCondition(planet, gameState);
+                RiotEndedCondition(planet, gameState);
                 if (planet.Authority < 10)
                 {
                     ReactionView.GameOverIndependece(planet);
@@ -67,22 +73,87 @@ namespace DominiumPlanet.Services
                 }
                 if (planet.Food < 20)
                 {
-                    planet.PublicSatisfaction -= 10;
+                    planet.PublicSatisfaction -= 6;
                     if (planet.PublicSatisfaction < 0) planet.PublicSatisfaction = 0;
                 }
 
-                if (planet.Energy < 20) planet.PublicSatisfaction -= 10;
+                if (planet.Energy < 20)
                 {
-                    planet.PublicSatisfaction -= 10;
+                    planet.PublicSatisfaction -= 8;
                     if (planet.PublicSatisfaction < 0) planet.PublicSatisfaction = 0;
                 }
-
-                if (planet.PublicSatisfaction <= 15)
-                {
-                    planet.Authority -= 5;
-                    //bunt
-                }
+                
             }
+        }
+
+        private static void RiotCondition(Planet planet, GameState gameState)
+        {
+            if (planet.PublicSatisfaction <= 15)
+            {
+                planet.Authority -= 5;
+
+                if (planet.Riot == false)
+                {
+                    string planetName;
+                    int money;
+                    (planetName, money) = FindPlanetData(planet);
+
+                    ReactionView.Riot(planetName, money);
+                    gameState.Income -= money;
+                    planet.Riot = true;
+                }
+
+            }
+        }
+
+        private static void RiotEndedCondition(Planet planet, GameState gameState)
+        {
+            //zakonczenie zamieszek
+            if (planet.PublicSatisfaction > 15 && planet.Riot == true)
+            {
+                planet.Riot = false;
+                planet.Authority += 5;
+                string planetName;
+                int money;
+                (planetName, money) = FindPlanetData(planet);
+                gameState.Income += money;
+                ReactionView.RiotEnded(planetName, money);
+
+            }
+        }
+
+        private static (string, int) FindPlanetData(Planet planet)
+        {
+            string planetName;
+            int money;
+            switch (planet.Name)
+            {
+                case "Mars":
+                    {
+                        planetName = "Marsie";
+                        money = 25;
+                        break;
+                    }
+                case "Wenus":
+                    {
+                        planetName = "Wenus";
+                        money = 50;
+                        break;
+                    }
+                case "Ziemia":
+                    {
+                        planetName = "Ziemi";
+                        money = 50;
+                        break;
+                    }
+                default:
+                    {
+                        planetName = "Jowiszu";
+                        money = 25;
+                        break;
+                    }
+            }
+            return (planetName, money);
         }
     }
 }

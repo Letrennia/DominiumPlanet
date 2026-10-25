@@ -19,6 +19,7 @@ namespace DominiumPlanet.Models
                 option1 = "Wygłoś przemowę.",
                 option2 = "Nie wygłaszaj przemowy - liczą się czyny nie słowa."
                
+
             };
             Decision decision1 = new Decision
             {
@@ -27,18 +28,18 @@ namespace DominiumPlanet.Models
                 "Podniesienie podatku od eksportu żywności wydaje się wręcz idealnym rozwiązaniem, aby uzupełnić pustki w Skarbcu - podniesienie opłat nie zaszkodzi tak zamożnej planecie jak Wenus.\n\n" +
                 "Coś jednak nie daje ci spokoju w tym pozornie idealnym rozwiązaniu...",
                 Cost = 0,
-                GainBudgetFrom = 100, //od kazdej tury najlepiej | gainbudget zawsze do skarbca
+                GainBudgetFrom = 25, //od kazdej tury najlepiej | gainbudget zawsze do skarbca
                 GainAuthority = 5,
-                GainPublicSatisfaction = -5,
-                IsActive = true,
+                GainPublicSatisfaction = -15,
+                IsActive = false,
                 PlanetName = "Wenus",
-                option1 = "Podnieś podatki od eksportu żywnosci (+100)",
+                option1 = "Podnieś podatki od eksportu żywnosci (+25 do każdej tury)",
                 option2 = "Zostaw Wenus w spokoju"
                
             };
             Decision decision2 = new Decision
             {
-                Name = "Ekspedycja na Mars",
+                Name = "Ekspedycja na Merkurego",
                 Description = "Pomimo pochodzenia, w głębi duszy zawsze było ci bliżej do Podróżnika niż Wielkiego Władcy. Teraz, gdy zostałeś zmuszony do przybrania tej drugiej pozy, coraz bardziej " +
                 "tęsknisz za prostszymi czasami a myśli mimowolnie zwracają się w kierunku Merkurego - tajemniczej planety, która uległa zniszczeniu 340 lat temu po nieudanej terraformacji. " +
                 "Pomimo upływu lat legendy o rozległych złożach i dawnej zaginionej technologi wciąż pozostają żywe. Ile jest w nich prawdy?\n\n" +
@@ -120,8 +121,8 @@ namespace DominiumPlanet.Models
             Decision decision8 = new Decision
             {
                 Name = "Przyślij część żywności na Mars",
-                Description = "Sytuacja na Marsie jak zwykle jest daleka od idealnych. Przyślij część własnych zapasów na Mars",
-                Cost = 70,
+                Description = "Sytuacja na Marsie jak zwykle jest daleka od idealnych, a po podwyżkach Wenus jest jeszcze gorzej. Przyślij część własnych zapasów na Mars",
+                Cost = 100,
                 FoodDistribution = (25, "Ziemia", "Mars"),
                 IsActive = false,
                 PlanetName = "Mars",
@@ -152,12 +153,13 @@ namespace DominiumPlanet.Models
                 Description = "Wysłannicy z Księżycy Jowisz zwrócili się do Ciebie z uprzejmą prośbą o dostarczenie energii. Generatory na Ganimedesie zostały uszkodzone podczas " +
                 "ostatniej burzy, a rezerwy energii na Io są na wyczerpaniu. Mars ma energii w nadmiarze, inna sprawa że będzie cię to troche kosztować aby przekonać fabrykantów " +
                 "do pomocy.",
-                Cost = 500,
+                Cost = 300,
                 IsActive = false,
                 PlanetName = "Jowisz",
                 GainAuthority = 5,
                 GainPublicSatisfaction = 15,
-                option1 = "Pomóż księżycom Jowisza",
+                EnergyDistribution = (25, "Mars", "Jowisz"),
+                option1 = "Pomóż księżycom Jowisza (25j)",
                 option2 = "Jeszcze nie teraz."
 
             };
@@ -165,7 +167,7 @@ namespace DominiumPlanet.Models
             {
                 Name = "Amnestia dla zdrajców",
                 Description = "Twój kuzyn nie był najlepszym Władcą, a w dodatku osoby, które go obaliły są jednocześniem powodem dlaczego to Ty zajmujesz teraz miejsce na tronie. ",
-                Cost =0,
+                Cost = 0,
                 IsActive=true,
                 GainAuthority = -15,
                 option1 = "Okaż miłosierdzie.",
@@ -189,7 +191,7 @@ namespace DominiumPlanet.Models
                 Description = "Twoi inspektorzy złożyli raport o warunkach panujących w 5 głównych zakładach Marsa. Tak jak się można było spodziewać większość norm została " +
                 "przekroczona. To co przykuwa twoją uwagę to natomiast fabryka MarsTech, która jest pod tym względem liderem. W twojej głowie układa się plan zamknięcia zakładu - " +
                 "zrobienie z niej przykładu.",
-                Cost = 100,
+                Cost = 120,
                 IsActive=false,
                 PlanetName = "Mars",
                 GainAuthority = -25,
@@ -215,25 +217,27 @@ namespace DominiumPlanet.Models
             {
                 Name = "Przekaż żywność z Wenus na Jowisz",
                 Description = "Sytuacja na Księżycach dalej pozostaje dramatyczna. Większość farm i centr agralnych zostało zniszczonych podczas Wojny. Mieszkańcy borykają się z głodem.",
-                Cost = 120,
+                Cost = 190,
                 IsActive = true,
                 GainAuthority = 10,
                 GainPublicSatisfaction = 10,
-                FoodDistribution = (40, "Wenus", "Jowisz"),
-                option1 = "Zorganizuj dostawę (40j).",
+                PlanetName = "Jowisz",
+                FoodDistribution = (25, "Wenus", "Jowisz"),
+                option1 = "Zorganizuj dostawę (25j).",
                 option2 = "Zostaw Jowisz sam sobie."
             };
             Decision decision16 = new Decision
             {
-                Name = "[red bold]BUNT[/]",
-                Description = "Sytuacja na Księżycach dalej pozostaje dramatyczna. Większość farm i centr agralnych zostało zniszczonych podczas Wojny. Mieszkańcy borykają się z głodem.",
-                Cost = 120,
+                Name = "Zakup zapas energii dla Ziemi",
+                Description = "Ziemia może i być siedzibą Władcy, ale nie zmienia to faktu, że jeśli chodzi o surowce to nie ma tu czego szukać.",
+                Cost = 300,
                 IsActive = false,
-                GainAuthority = 15,
-                GainPublicSatisfaction = 15,
-                FoodDistribution = (40, "Wenus", "Jowisz"),
-                option1 = "Zorganizuj dostawę (40j).",
-                option2 = "Zostaw Jowisz sam sobie."
+                GainAuthority = 5,
+                GainPublicSatisfaction = 10,
+                PlanetName = "Ziemia",
+                EnergyDistribution = (30, "Mars", "Ziemia"),
+                option1 = "Zamów dostawę (30j).",
+                option2 = "Cena jest zbyt wysoka."
             };
 
 
