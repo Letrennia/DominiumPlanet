@@ -39,15 +39,15 @@ namespace DominiumPlanet.Models
                 "Podczas wojny, chociaż Wenus oficjalnie poparła władzę centralną, to tajemnicą poliszynela pozostaje fakt, że lokalne elity handlowały ze wszystkimi, którzy byli w stanie zapłacić.\n\n " +
                 "Dziś, Wenus zamiast szmaragdem w koronie, pozostaje raczej cierniem w boku rządzących, gdzie zamiast szukać wspólnego dobra każdy liczy na szybkie napełnienie własnych kieszeni, a " +
                 "może i uzyskanie czegoś więcej?",
-                Food = 120,
-                Energy = 70,
-                PublicSatisfaction = 65,
+                Food = 200,
+                Energy = 120,
+                PublicSatisfaction = 85,
                 Authority = 30,
 
-                FoodProduction = 80,
-                EnergyProduction = 9,
-                FoodUsage = 50,
-                EnergyUsage = 15,
+                FoodProduction = 100,
+                EnergyProduction = 15,
+                FoodUsage = 20,
+                EnergyUsage = 10,
                 IsIndependent = false,
                 Riot = false
             };
@@ -71,7 +71,7 @@ namespace DominiumPlanet.Models
                 FoodProduction = 10,
                 EnergyProduction = 70,
                 FoodUsage = 20,
-                EnergyUsage = 35,
+                EnergyUsage = 20,
                 IsIndependent = false,
                 Riot = false
             };
@@ -85,8 +85,8 @@ namespace DominiumPlanet.Models
                 "ma tutaj swój oddział - w tym wszystkie najważniejsze banki. " +
                 "Natomiast błędem byłoby zakładać, że jest to arkadia - w każdym kącie może czyhać niebezpieczeństwo, a każdy uśmiech skrywać drwinę lub potencjalny spisek.\n\n" +
                 "O bezpieczeństwo Władcy Dominium troszczy się Gwardia Przyboczna. Może podniosłoby Cię to na duchu, gdyby nie świadomość, że połowa Twoich poprzedników została przez nią obalona.",
-                Food = 80,
-                Energy = 70,
+                Food = 90,
+                Energy = 80,
                 PublicSatisfaction = 60,
                 Authority = 45,
 

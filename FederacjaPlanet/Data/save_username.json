@@ -1,9 +1,9 @@
 {
   "GameState": {
-    "Turn": 8,
-    "Treasury": 275,
-    "Debt": 2240,
-    "DebtCount": 2,
+    "Turn": 3,
+    "Treasury": 110,
+    "Debt": 800,
+    "DebtCount": -1,
     "Income": 150,
     "Planets": [
       {
@@ -23,38 +23,38 @@
       {
         "Name": "Wenus",
         "Description": "Dzięki rozwiniętej kulturze agralnej, sprzyjającej temperaturze i krótkiemu okresowi obiegu wokół Słońca, Wenus z czasem stało się spichlerzem Sol Dominium. Pola uprawne to jednak nie wszystko co ma do zaoferowania ta piękna planeta - jej wybrzeża zapełnione sa ośrodków wypoczynkowych i sportowych.Podczas wojny, chociaż Wenus oficjalnie poparła władzę centralną, to tajemnicą poliszynela pozostaje fakt, że lokalne elity handlowały ze wszystkimi, którzy byli w stanie zapłacić.\n\n Dziś, Wenus zamiast szmaragdem w koronie, pozostaje raczej cierniem w boku rządzących, gdzie zamiast szukać wspólnego dobra każdy liczy na szybkie napełnienie własnych kieszeni, a może i uzyskanie czegoś więcej?",
-        "Food": 215,
-        "Energy": 63,
-        "PublicSatisfaction": 50,
-        "Authority": 45,
-        "FoodProduction": 80,
-        "EnergyProduction": 9,
-        "FoodUsage": 50,
-        "EnergyUsage": 15,
+        "Food": 335,
+        "Energy": 130,
+        "PublicSatisfaction": 85,
+        "Authority": 40,
+        "FoodProduction": 100,
+        "EnergyProduction": 15,
+        "FoodUsage": 20,
+        "EnergyUsage": 10,
         "IsIndependent": false,
         "Riot": false
       },
       {
         "Name": "Mars",
         "Description": "Miejsce skrajnosci, gdzie monumentalne wieżowce sąsiadują z robotniczymi osiedlami. Ze względu na bogate i rozległe złoża surowców, większość powierzchni Marsa pokrywają szyby i fabryki - to właśnie tutaj przybywają ludzie w poszukiwaniu szczęścia i szybkiego zarobku. Co faktycznie znajdują? Jeśli są inwestorami to najczęściej hermetyczne środowisko, niechętne do przyjmowania konkurencji. Natomiast jeśli interesuje ich praca, nie musza się martwić - każda para rąk do pracy się przyda! Inna sprawa gdy chodzi o wynagrodzenie - stawki są marne, a od kiedy gospodarka przestawiła się na wspieranie marynarki, Mars dalej nie może dojść do siebie.\n\nNierówności społeczne są większe niż kiedykolwiek, a ludzie przepracowani i nieodżywieni.\nWłaścicieli fabryk to nie przejmuje - w końcu nowych pracowników ciągle przybywa, a wyniki nigdy nie były lepsze!\n\nIle czasu minie nim głodujący wyjdą na ulice?",
-        "Food": 30,
-        "Energy": 355,
-        "PublicSatisfaction": 18,
-        "Authority": 75,
+        "Food": 20,
+        "Energy": 300,
+        "PublicSatisfaction": 37,
+        "Authority": 65,
         "FoodProduction": 10,
         "EnergyProduction": 70,
         "FoodUsage": 20,
-        "EnergyUsage": 35,
+        "EnergyUsage": 20,
         "IsIndependent": false,
         "Riot": false
       },
       {
         "Name": "Ziemia",
         "Description": "To właśnie od tej planety wszystko się zaczęło. Z niej wyruszyły pierwsze ekspedycje badawcze, a później statki pasażerskie i towarowe. Nic więc dziwnego, że to Ziemia została stolicą Dominium i to właśnie tutaj znajduje się główna siedziba Władcy.\n\nPomimo upływu lat i wyczerpania surowców, Ziemia nie jest jednak jedynie reliktem przeszłości - dzięki swojej długiej historii i prestiżowi, wiele firm i instytucji ma tutaj swój oddział - w tym wszystkie najważniejsze banki. Natomiast błędem byłoby zakładać, że jest to arkadia - w każdym kącie może czyhać niebezpieczeństwo, a każdy uśmiech skrywać drwinę lub potencjalny spisek.\n\nO bezpieczeństwo Władcy Dominium troszczy się Gwardia Przyboczna. Może podniosłoby Cię to na duchu, gdyby nie świadomość, że połowa Twoich poprzedników została przez nią obalona.",
-        "Food": 15,
-        "Energy": 0,
-        "PublicSatisfaction": 24,
-        "Authority": 4,
+        "Food": 70,
+        "Energy": 50,
+        "PublicSatisfaction": 60,
+        "Authority": 59,
         "FoodProduction": 10,
         "EnergyProduction": 10,
         "FoodUsage": 20,
@@ -67,8 +67,8 @@
         "Description": "A właściwie to jego księzyce. Kiedyś miejsca słynące z wielu ośrodków kluturalnych oraz ogromnych farm centr danych. Dziś ruina. To właśnie na ksiezycach Jowisza miały miejsce najbardziej zażarce walki podczas Wojny.Teraz gdy podpisano rozejm, a 80% infrastruktury zostało zniszczone, mieszkańcy mogą jedynie liczyć na pomoc innych planet i Plan Odbudowy zapowiedziany jeszcze za panowania Hadriana.\n\nWielu uważa, że Księżyce Jowisza już nigdy nie odzyskają dawnej świetności i lepiej byłoby zainwestować w terraformacje innego miejsca zamiast marnować fundusze na to gruzowisko.\n\nCzy Ksiezyce Jowisza mają jeszcze szanse na lepszą przyszłość?",
         "Food": 35,
         "Energy": 20,
-        "PublicSatisfaction": 44,
-        "Authority": 81,
+        "PublicSatisfaction": 40,
+        "Authority": 55,
         "FoodProduction": 5,
         "EnergyProduction": 5,
         "FoodUsage": 10,
@@ -154,7 +154,7 @@
           "Item2": null,
           "Item3": null
         },
-        "IsActive": false,
+        "IsActive": true,
         "option1": "Podnieś podatki od eksportu żywnosci (+25 do każdej tury)",
         "option2": "Zostaw Wenus w spokoju"
       },
@@ -185,9 +185,9 @@
         "Description": "Ziemscy bankierzy są zawsze skłonni pożyczyć pieniądze tak szanownej osobie jak Władca Federacji. Na jaki procent? Proszę nie zaprzątać tym sobie głowy Ekscelencjo! Na jaki okres? Z pewnością uda nam się dogadać...\n\nZaciągnięty dług jednak nie maleje, a w dodatku dalej nie udało ci się całkowicie spłacić kredytu, który został przeznaczony na modernizacje floty, należącej do twojej rodziny. Czy możesz sobie pozwolić na oplatanie się kolejnymi węzami założonymi przez bankierów?",
         "PlanetName": "Ziemia",
         "Cost": 0,
-        "GainBudgetFrom": 400,
+        "GainBudgetFrom": 500,
         "GainPublicSatisfaction": 0,
-        "GainAuthority": -20,
+        "GainAuthority": -15,
         "FoodDistribution": {
           "Item1": 0,
           "Item2": null,
@@ -199,7 +199,7 @@
           "Item3": null
         },
         "IsActive": true,
-        "option1": "Zadlóż sie (+400).",
+        "option1": "Zadlóż sie (+500).",
         "option2": "Nie bierz kolejnego kredytu."
       },
       {
@@ -228,7 +228,7 @@
         "Name": "Przekaż środki na odbudowę Jowisza",
         "Description": "Podczas twojej przemowy padły kluczowe słowa 'Dołożę wszelkich starań, aby naprawić krzywdy wyrządzone rządami mojego poprzednika. [...] Nie pozwolę by Jowisz podzielił los Merkurego!\n\nTo wszystko piękne słowa, ale czy coś za nimi stoi?",
         "PlanetName": "Jowisz",
-        "Cost": 240,
+        "Cost": 200,
         "GainBudgetFrom": 0,
         "GainPublicSatisfaction": 11,
         "GainAuthority": 11,
@@ -242,7 +242,7 @@
           "Item2": null,
           "Item3": null
         },
-        "IsActive": false,
+        "IsActive": true,
         "option1": "Przekaż fundusze na odbudowę.",
         "option2": "Poczekaj z odbudową."
       },
@@ -250,7 +250,7 @@
         "Name": "Reformy na Marsie - los robotników",
         "Description": "Wszyscy, nawet Twój poprzednik, zdawali sobie sprawę z tego jak traktowani są robotnicy na Marsie. Wszyscy, nawet Twój poprzednik zdawali sobie sprawę, że interwencja na niewiele by się zdała, a mogłaby sprawić że elity Marsa obróciłyby się przeciwko Władzy Centralnej. W dniu ślubowania wiele myśli kłębiło się w Twojej głowie, ale najgłośniejszą była 'muszę pokazać wszystkim że nie jestem jak Hadrian. Muszę przywrócić światu równowagę'.\n\nTo twoja szansa by pokazać się jako miłosierny Władca.",
         "PlanetName": "Mars",
-        "Cost": 130,
+        "Cost": 100,
         "GainBudgetFrom": 0,
         "GainPublicSatisfaction": 2,
         "GainAuthority": 5,
@@ -294,7 +294,7 @@
         "Name": "Przyślij część żywności na Mars",
         "Description": "Sytuacja na Marsie jak zwykle jest daleka od idealnych, a po podwyżkach Wenus jest jeszcze gorzej. Przyślij część własnych zapasów na Mars",
         "PlanetName": "Mars",
-        "Cost": 130,
+        "Cost": 100,
         "GainBudgetFrom": 0,
         "GainPublicSatisfaction": 0,
         "GainAuthority": 0,
@@ -374,7 +374,7 @@
           "Item2": null,
           "Item3": null
         },
-        "IsActive": false,
+        "IsActive": true,
         "option1": "Wyślij inspekcje do 5 głównych zakładów.",
         "option2": "Nie rób inspekcji - masz ważniejsze rzeczy na głowie."
       },
@@ -382,10 +382,10 @@
         "Name": "Zamknij fabrykę MarsTech",
         "Description": "Twoi inspektorzy złożyli raport o warunkach panujących w 5 głównych zakładach Marsa. Tak jak się można było spodziewać większość norm została przekroczona. To co przykuwa twoją uwagę to natomiast fabryka MarsTech, która jest pod tym względem liderem. W twojej głowie układa się plan zamknięcia zakładu - zrobienie z niej przykładu.",
         "PlanetName": "Mars",
-        "Cost": 200,
+        "Cost": 120,
         "GainBudgetFrom": 0,
-        "GainPublicSatisfaction": -25,
-        "GainAuthority": 10,
+        "GainPublicSatisfaction": 10,
+        "GainAuthority": -25,
         "FoodDistribution": {
           "Item1": 0,
           "Item2": null,
@@ -407,7 +407,7 @@
         "Cost": 0,
         "GainBudgetFrom": 250,
         "GainPublicSatisfaction": 5,
-        "GainAuthority": -10,
+        "GainAuthority": -8,
         "FoodDistribution": {
           "Item1": 0,
           "Item2": null,
@@ -418,7 +418,7 @@
           "Item2": null,
           "Item3": null
         },
-        "IsActive": false,
+        "IsActive": true,
         "option1": "Ogranicz wydatki na wojsko (+250).",
         "option2": "Nie rób inspekcji - masz ważniejsze rzeczy na głowie."
       },
@@ -426,7 +426,7 @@
         "Name": "Przekaż żywność z Wenus na Jowisz",
         "Description": "Sytuacja na Księżycach dalej pozostaje dramatyczna. Większość farm i centr agralnych zostało zniszczonych podczas Wojny. Mieszkańcy borykają się z głodem.",
         "PlanetName": "Jowisz",
-        "Cost": 250,
+        "Cost": 190,
         "GainBudgetFrom": 0,
         "GainPublicSatisfaction": 10,
         "GainAuthority": 10,
@@ -448,7 +448,7 @@
         "Name": "Zakup zapas energii dla Ziemi",
         "Description": "Ziemia może i być siedzibą Władcy, ale nie zmienia to faktu, że jeśli chodzi o surowce to nie ma tu czego szukać.",
         "PlanetName": "Ziemia",
-        "Cost": 340,
+        "Cost": 300,
         "GainBudgetFrom": 0,
         "GainPublicSatisfaction": 10,
         "GainAuthority": 5,
@@ -465,142 +465,35 @@
         "IsActive": false,
         "option1": "Zamów dostawę (30j).",
         "option2": "Cena jest zbyt wysoka."
-      },
-      {
-        "Name": "Mieszkania socjalne na Marsie",
-        "Description": "Pomimo twoich zaleceń, fabrykanci dalej nie egzekwują nowych zasad. Aby wspomóc wykorzystywanych pracowników postanawiasz zacząć budować mieszkania socjalne... bez zgody ich pracodawców.",
-        "PlanetName": "Mars",
-        "Cost": 290,
-        "GainBudgetFrom": 0,
-        "GainPublicSatisfaction": 10,
-        "GainAuthority": -20,
-        "FoodDistribution": {
-          "Item1": 0,
-          "Item2": null,
-          "Item3": null
-        },
-        "EnergyDistribution": {
-          "Item1": 0,
-          "Item2": null,
-          "Item3": null
-        },
-        "IsActive": true,
-        "option1": "Działaj na własną rękę.",
-        "option2": "Utrzymaj względnie dobre stosunki z elitami Marsa."
-      },
-      {
-        "Name": "Dofinansuj ośrodki kultury na Jowiszu",
-        "Description": "Kiedyś księżyce Jowisza były ostoją kultury, a na każdej ulicy znajdował się Teatr, Opera lub Muzeum. Tęsknisz za czasami, gdy Europa biła światłami kamer i ogromnych telebimów. Choć nikt nie posądziłby Cię o poetycką duszę to jednak jakaś cząstka Ciebie ciepło wraca myślami do nudnych wernisaży, które organizowała twoja Ciotka. \n\n A może jeszcze nie jest za późno?",
-        "PlanetName": "Jowisz",
-        "Cost": 170,
-        "GainBudgetFrom": 0,
-        "GainPublicSatisfaction": -15,
-        "GainAuthority": -15,
-        "FoodDistribution": {
-          "Item1": 0,
-          "Item2": null,
-          "Item3": null
-        },
-        "EnergyDistribution": {
-          "Item1": 0,
-          "Item2": null,
-          "Item3": null
-        },
-        "IsActive": true,
-        "option1": "Wspomóż artystyczną działalność na Jowiszu.",
-        "option2": "Czas na sztukę jeszcze nie nadszedł."
-      },
-      {
-        "Name": "Zakup żywności na Ziemię",
-        "Description": "Wenus grozi podniesieniem cen eksportu żywności, a ludzie w stolicy są niespokojni. Dodatkowa żywność zawsze się przyda, ale przesadą byłoby powiedzenie że cena nie gra roli.",
-        "PlanetName": "Ziemia",
-        "Cost": 370,
-        "GainBudgetFrom": 0,
-        "GainPublicSatisfaction": -10,
-        "GainAuthority": 0,
-        "FoodDistribution": {
-          "Item1": 30,
-          "Item2": "Wenus",
-          "Item3": "Ziemia"
-        },
-        "EnergyDistribution": {
-          "Item1": 0,
-          "Item2": null,
-          "Item3": null
-        },
-        "IsActive": false,
-        "option1": "Zakup żywność (30j).",
-        "option2": "Poczekaj."
-      },
-      {
-        "Name": "Pośrednicz w wymianie",
-        "Description": "Sytuacja pomiędzy Wenus a Marsem zawsze była napięte - ludzie stojący za sterami tych planet zawsze byli zbyt ambitni i zbyt egocentryczni dla własnego dobra. Dziś zwracają się do ciebie z prośbą aby uczestniczyć w wymianie towarów Żywność za Energie. Oczywiście za swój udział obie strony hojnie Cię wynagrodzą.",
-        "PlanetName": "",
-        "Cost": 0,
-        "GainBudgetFrom": 200,
-        "GainPublicSatisfaction": 0,
-        "GainAuthority": 0,
-        "FoodDistribution": {
-          "Item1": 35,
-          "Item2": "Wenus",
-          "Item3": "Mars"
-        },
-        "EnergyDistribution": {
-          "Item1": 35,
-          "Item2": "Mars",
-          "Item3": "Wenus"
-        },
-        "IsActive": false,
-        "option1": "Zostań mediatorem (+200).",
-        "option2": "Niech radzą sobie sami."
-      },
-      {
-        "Name": "Gala",
-        "Description": "Ekstrawaganckie przyjęcia to idealne miejsce do pokazania sie z lepszej strony jak i świetny moment na zawarcie bliższych znajomości z lokalną elitą.",
-        "PlanetName": "",
-        "Cost": 0,
-        "GainBudgetFrom": 0,
-        "GainPublicSatisfaction": -5,
-        "GainAuthority": 5,
-        "FoodDistribution": {
-          "Item1": 0,
-          "Item2": null,
-          "Item3": null
-        },
-        "EnergyDistribution": {
-          "Item1": 0,
-          "Item2": null,
-          "Item3": null
-        },
-        "IsActive": false,
-        "option1": "Uczestnicz w gali.",
-        "option2": "To nie jest dobry moment."
-      },
-      {
-        "Name": "Modernizacja ziemskiej floty",
-        "Description": "Podczas ostatniego spotkania z doradcami padł temat zagrożenia ze strony Sojuszu Księżycowego. Temat ten, podobnie jak wiele innych, zazwyczaj znajdzie swoje miejsce podczas każdej mniejszej lub większej debaty. Zazwyczaj zbywasz zagrożenie machnięciem ręki, ale nie można zaprzeczyć, że ostatnio SK radzi sobie naprawdę dobrze.\n\nPodejrzanie dobrze. ",
-        "PlanetName": "",
-        "Cost": 420,
-        "GainBudgetFrom": 0,
-        "GainPublicSatisfaction": 10,
-        "GainAuthority": 5,
-        "FoodDistribution": {
-          "Item1": 0,
-          "Item2": null,
-          "Item3": null
-        },
-        "EnergyDistribution": {
-          "Item1": 0,
-          "Item2": null,
-          "Item3": null
-        },
-        "IsActive": false,
-        "option1": "Przeznacz fundusze na modernizacje.",
-        "option2": "To tylko plotki..."
       }
     ]
   },
   "Raport": [
+    {
+      "Item1": 1,
+      "Item2": {
+        "Name": "Spłać część kredytu",
+        "Description": "Nadszedł czas by uwolnić się od części zobowiązań.",
+        "PlanetName": "Ziemia",
+        "Cost": 100,
+        "GainBudgetFrom": 0,
+        "GainPublicSatisfaction": 0,
+        "GainAuthority": 2,
+        "FoodDistribution": {
+          "Item1": 0,
+          "Item2": null,
+          "Item3": null
+        },
+        "EnergyDistribution": {
+          "Item1": 0,
+          "Item2": null,
+          "Item3": null
+        },
+        "IsActive": true,
+        "option1": "Spłać część kredytu.",
+        "option2": "Jeszcze nie teraz."
+      }
+    },
     {
       "Item1": 1,
       "Item2": {
@@ -629,35 +522,10 @@
     {
       "Item1": 1,
       "Item2": {
-        "Name": "Przekaż środki na odbudowę Jowisza",
-        "Description": "Podczas twojej przemowy padły kluczowe słowa 'Dołożę wszelkich starań, aby naprawić krzywdy wyrządzone rządami mojego poprzednika. [...] Nie pozwolę by Jowisz podzielił los Merkurego!\n\nTo wszystko piękne słowa, ale czy coś za nimi stoi?",
-        "PlanetName": "Jowisz",
-        "Cost": 240,
-        "GainBudgetFrom": 0,
-        "GainPublicSatisfaction": 11,
-        "GainAuthority": 11,
-        "FoodDistribution": {
-          "Item1": 0,
-          "Item2": null,
-          "Item3": null
-        },
-        "EnergyDistribution": {
-          "Item1": 0,
-          "Item2": null,
-          "Item3": null
-        },
-        "IsActive": false,
-        "option1": "Przekaż fundusze na odbudowę.",
-        "option2": "Poczekaj z odbudową."
-      }
-    },
-    {
-      "Item1": 3,
-      "Item2": {
         "Name": "Przekaż żywność z Wenus na Jowisz",
         "Description": "Sytuacja na Księżycach dalej pozostaje dramatyczna. Większość farm i centr agralnych zostało zniszczonych podczas Wojny. Mieszkańcy borykają się z głodem.",
         "PlanetName": "Jowisz",
-        "Cost": 250,
+        "Cost": 190,
         "GainBudgetFrom": 0,
         "GainPublicSatisfaction": 10,
         "GainAuthority": 10,
@@ -677,37 +545,12 @@
       }
     },
     {
-      "Item1": 3,
-      "Item2": {
-        "Name": "Ogranicz wydatki na wojsko",
-        "Description": "Wojna skończyła się rok temu, a mimo to na wojsko dalej przeznaczane są wysokie kwoty. 'Być może ludzie zasługują na pokój' mówisz.\n\nTwoi doradcy się z tobą nie zgadzają. Przypominają ci o zagrożeniu ze strony Sojuszu Księżycowego, o tym co się stało z księżycami Jowisza. A jednak jeśli nic nie zrobisz to niedługo skarbiec będzie całkowicie pusty.",
-        "PlanetName": "",
-        "Cost": 0,
-        "GainBudgetFrom": 250,
-        "GainPublicSatisfaction": 5,
-        "GainAuthority": -10,
-        "FoodDistribution": {
-          "Item1": 0,
-          "Item2": null,
-          "Item3": null
-        },
-        "EnergyDistribution": {
-          "Item1": 0,
-          "Item2": null,
-          "Item3": null
-        },
-        "IsActive": false,
-        "option1": "Ogranicz wydatki na wojsko (+250).",
-        "option2": "Nie rób inspekcji - masz ważniejsze rzeczy na głowie."
-      }
-    },
-    {
-      "Item1": 3,
+      "Item1": 2,
       "Item2": {
         "Name": "Reformy na Marsie - los robotników",
         "Description": "Wszyscy, nawet Twój poprzednik, zdawali sobie sprawę z tego jak traktowani są robotnicy na Marsie. Wszyscy, nawet Twój poprzednik zdawali sobie sprawę, że interwencja na niewiele by się zdała, a mogłaby sprawić że elity Marsa obróciłyby się przeciwko Władzy Centralnej. W dniu ślubowania wiele myśli kłębiło się w Twojej głowie, ale najgłośniejszą była 'muszę pokazać wszystkim że nie jestem jak Hadrian. Muszę przywrócić światu równowagę'.\n\nTo twoja szansa by pokazać się jako miłosierny Władca.",
         "PlanetName": "Mars",
-        "Cost": 130,
+        "Cost": 100,
         "GainBudgetFrom": 0,
         "GainPublicSatisfaction": 2,
         "GainAuthority": 5,
@@ -727,132 +570,7 @@
       }
     },
     {
-      "Item1": 4,
-      "Item2": {
-        "Name": "Przekieruj energię z Marsa na Jowisz",
-        "Description": "Wysłannicy z Księżycy Jowisz zwrócili się do Ciebie z uprzejmą prośbą o dostarczenie energii. Generatory na Ganimedesie zostały uszkodzone podczas ostatniej burzy, a rezerwy energii na Io są na wyczerpaniu. Mars ma energii w nadmiarze, inna sprawa że będzie cię to troche kosztować aby przekonać fabrykantów do pomocy.",
-        "PlanetName": "Jowisz",
-        "Cost": 300,
-        "GainBudgetFrom": 0,
-        "GainPublicSatisfaction": 15,
-        "GainAuthority": 5,
-        "FoodDistribution": {
-          "Item1": 0,
-          "Item2": null,
-          "Item3": null
-        },
-        "EnergyDistribution": {
-          "Item1": 25,
-          "Item2": "Mars",
-          "Item3": "Jowisz"
-        },
-        "IsActive": false,
-        "option1": "Pomóż księżycom Jowisza (25j)",
-        "option2": "Jeszcze nie teraz."
-      }
-    },
-    {
-      "Item1": 5,
-      "Item2": {
-        "Name": "Kredyt",
-        "Description": "Ziemscy bankierzy są zawsze skłonni pożyczyć pieniądze tak szanownej osobie jak Władca Federacji. Na jaki procent? Proszę nie zaprzątać tym sobie głowy Ekscelencjo! Na jaki okres? Z pewnością uda nam się dogadać...\n\nZaciągnięty dług jednak nie maleje, a w dodatku dalej nie udało ci się całkowicie spłacić kredytu, który został przeznaczony na modernizacje floty, należącej do twojej rodziny. Czy możesz sobie pozwolić na oplatanie się kolejnymi węzami założonymi przez bankierów?",
-        "PlanetName": "Ziemia",
-        "Cost": 0,
-        "GainBudgetFrom": 400,
-        "GainPublicSatisfaction": 0,
-        "GainAuthority": -20,
-        "FoodDistribution": {
-          "Item1": 0,
-          "Item2": null,
-          "Item3": null
-        },
-        "EnergyDistribution": {
-          "Item1": 0,
-          "Item2": null,
-          "Item3": null
-        },
-        "IsActive": true,
-        "option1": "Zadlóż sie (+400).",
-        "option2": "Nie bierz kolejnego kredytu."
-      }
-    },
-    {
-      "Item1": 5,
-      "Item2": {
-        "Name": "Zakup zapas energii dla Ziemi",
-        "Description": "Ziemia może i być siedzibą Władcy, ale nie zmienia to faktu, że jeśli chodzi o surowce to nie ma tu czego szukać.",
-        "PlanetName": "Ziemia",
-        "Cost": 340,
-        "GainBudgetFrom": 0,
-        "GainPublicSatisfaction": 10,
-        "GainAuthority": 5,
-        "FoodDistribution": {
-          "Item1": 0,
-          "Item2": null,
-          "Item3": null
-        },
-        "EnergyDistribution": {
-          "Item1": 30,
-          "Item2": "Mars",
-          "Item3": "Ziemia"
-        },
-        "IsActive": false,
-        "option1": "Zamów dostawę (30j).",
-        "option2": "Cena jest zbyt wysoka."
-      }
-    },
-    {
-      "Item1": 5,
-      "Item2": {
-        "Name": "Przyślij część żywności na Mars",
-        "Description": "Sytuacja na Marsie jak zwykle jest daleka od idealnych, a po podwyżkach Wenus jest jeszcze gorzej. Przyślij część własnych zapasów na Mars",
-        "PlanetName": "Mars",
-        "Cost": 130,
-        "GainBudgetFrom": 0,
-        "GainPublicSatisfaction": 0,
-        "GainAuthority": 0,
-        "FoodDistribution": {
-          "Item1": 25,
-          "Item2": "Ziemia",
-          "Item3": "Mars"
-        },
-        "EnergyDistribution": {
-          "Item1": 0,
-          "Item2": null,
-          "Item3": null
-        },
-        "IsActive": false,
-        "option1": "Prześlij żywność na Mars.",
-        "option2": "Zachowaj żywność sobie."
-      }
-    },
-    {
-      "Item1": 6,
-      "Item2": {
-        "Name": "Gala",
-        "Description": "Ekstrawaganckie przyjęcia to idealne miejsce do pokazania sie z lepszej strony jak i świetny moment na zawarcie bliższych znajomości z lokalną elitą.",
-        "PlanetName": "",
-        "Cost": 0,
-        "GainBudgetFrom": 0,
-        "GainPublicSatisfaction": -5,
-        "GainAuthority": 5,
-        "FoodDistribution": {
-          "Item1": 0,
-          "Item2": null,
-          "Item3": null
-        },
-        "EnergyDistribution": {
-          "Item1": 0,
-          "Item2": null,
-          "Item3": null
-        },
-        "IsActive": false,
-        "option1": "Uczestnicz w gali.",
-        "option2": "To nie jest dobry moment."
-      }
-    },
-    {
-      "Item1": 6,
+      "Item1": 3,
       "Item2": {
         "Name": "Spłać część kredytu",
         "Description": "Nadszedł czas by uwolnić się od części zobowiązań.",
@@ -874,231 +592,6 @@
         "IsActive": true,
         "option1": "Spłać część kredytu.",
         "option2": "Jeszcze nie teraz."
-      }
-    },
-    {
-      "Item1": 6,
-      "Item2": {
-        "Name": "Kredyt",
-        "Description": "Ziemscy bankierzy są zawsze skłonni pożyczyć pieniądze tak szanownej osobie jak Władca Federacji. Na jaki procent? Proszę nie zaprzątać tym sobie głowy Ekscelencjo! Na jaki okres? Z pewnością uda nam się dogadać...\n\nZaciągnięty dług jednak nie maleje, a w dodatku dalej nie udało ci się całkowicie spłacić kredytu, który został przeznaczony na modernizacje floty, należącej do twojej rodziny. Czy możesz sobie pozwolić na oplatanie się kolejnymi węzami założonymi przez bankierów?",
-        "PlanetName": "Ziemia",
-        "Cost": 0,
-        "GainBudgetFrom": 400,
-        "GainPublicSatisfaction": 0,
-        "GainAuthority": -20,
-        "FoodDistribution": {
-          "Item1": 0,
-          "Item2": null,
-          "Item3": null
-        },
-        "EnergyDistribution": {
-          "Item1": 0,
-          "Item2": null,
-          "Item3": null
-        },
-        "IsActive": true,
-        "option1": "Zadlóż sie (+400).",
-        "option2": "Nie bierz kolejnego kredytu."
-      }
-    },
-    {
-      "Item1": 6,
-      "Item2": {
-        "Name": "Zakup żywności na Ziemię",
-        "Description": "Wenus grozi podniesieniem cen eksportu żywności, a ludzie w stolicy są niespokojni. Dodatkowa żywność zawsze się przyda, ale przesadą byłoby powiedzenie że cena nie gra roli.",
-        "PlanetName": "Ziemia",
-        "Cost": 370,
-        "GainBudgetFrom": 0,
-        "GainPublicSatisfaction": -10,
-        "GainAuthority": 0,
-        "FoodDistribution": {
-          "Item1": 30,
-          "Item2": "Wenus",
-          "Item3": "Ziemia"
-        },
-        "EnergyDistribution": {
-          "Item1": 0,
-          "Item2": null,
-          "Item3": null
-        },
-        "IsActive": false,
-        "option1": "Zakup żywność (30j).",
-        "option2": "Poczekaj."
-      }
-    },
-    {
-      "Item1": 7,
-      "Item2": {
-        "Name": "Pośrednicz w wymianie",
-        "Description": "Sytuacja pomiędzy Wenus a Marsem zawsze była napięte - ludzie stojący za sterami tych planet zawsze byli zbyt ambitni i zbyt egocentryczni dla własnego dobra. Dziś zwracają się do ciebie z prośbą aby uczestniczyć w wymianie towarów Żywność za Energie. Oczywiście za swój udział obie strony hojnie Cię wynagrodzą.",
-        "PlanetName": "",
-        "Cost": 0,
-        "GainBudgetFrom": 200,
-        "GainPublicSatisfaction": 0,
-        "GainAuthority": 0,
-        "FoodDistribution": {
-          "Item1": 35,
-          "Item2": "Wenus",
-          "Item3": "Mars"
-        },
-        "EnergyDistribution": {
-          "Item1": 35,
-          "Item2": "Mars",
-          "Item3": "Wenus"
-        },
-        "IsActive": false,
-        "option1": "Zostań mediatorem (+200).",
-        "option2": "Niech radzą sobie sami."
-      }
-    },
-    {
-      "Item1": 7,
-      "Item2": {
-        "Name": "Inspekcja fabryk na Marsie",
-        "Description": "Nie jest wielką tajemnicą jak się mają sprawy na Marsie. Ostatnio jednak coraz głośnie mówi się o możliwości zamieszek. ",
-        "PlanetName": "Mars",
-        "Cost": 120,
-        "GainBudgetFrom": 0,
-        "GainPublicSatisfaction": 5,
-        "GainAuthority": 10,
-        "FoodDistribution": {
-          "Item1": 0,
-          "Item2": null,
-          "Item3": null
-        },
-        "EnergyDistribution": {
-          "Item1": 0,
-          "Item2": null,
-          "Item3": null
-        },
-        "IsActive": false,
-        "option1": "Wyślij inspekcje do 5 głównych zakładów.",
-        "option2": "Nie rób inspekcji - masz ważniejsze rzeczy na głowie."
-      }
-    },
-    {
-      "Item1": 7,
-      "Item2": {
-        "Name": "Modernizacja ziemskiej floty",
-        "Description": "Podczas ostatniego spotkania z doradcami padł temat zagrożenia ze strony Sojuszu Księżycowego. Temat ten, podobnie jak wiele innych, zazwyczaj znajdzie swoje miejsce podczas każdej mniejszej lub większej debaty. Zazwyczaj zbywasz zagrożenie machnięciem ręki, ale nie można zaprzeczyć, że ostatnio SK radzi sobie naprawdę dobrze.\n\nPodejrzanie dobrze. ",
-        "PlanetName": "",
-        "Cost": 420,
-        "GainBudgetFrom": 0,
-        "GainPublicSatisfaction": 10,
-        "GainAuthority": 5,
-        "FoodDistribution": {
-          "Item1": 0,
-          "Item2": null,
-          "Item3": null
-        },
-        "EnergyDistribution": {
-          "Item1": 0,
-          "Item2": null,
-          "Item3": null
-        },
-        "IsActive": false,
-        "option1": "Przeznacz fundusze na modernizacje.",
-        "option2": "To tylko plotki..."
-      }
-    },
-    {
-      "Item1": 8,
-      "Item2": {
-        "Name": "Spłać część kredytu",
-        "Description": "Nadszedł czas by uwolnić się od części zobowiązań.",
-        "PlanetName": "Ziemia",
-        "Cost": 100,
-        "GainBudgetFrom": 0,
-        "GainPublicSatisfaction": 0,
-        "GainAuthority": 2,
-        "FoodDistribution": {
-          "Item1": 0,
-          "Item2": null,
-          "Item3": null
-        },
-        "EnergyDistribution": {
-          "Item1": 0,
-          "Item2": null,
-          "Item3": null
-        },
-        "IsActive": true,
-        "option1": "Spłać część kredytu.",
-        "option2": "Jeszcze nie teraz."
-      }
-    },
-    {
-      "Item1": 8,
-      "Item2": {
-        "Name": "Kredyt",
-        "Description": "Ziemscy bankierzy są zawsze skłonni pożyczyć pieniądze tak szanownej osobie jak Władca Federacji. Na jaki procent? Proszę nie zaprzątać tym sobie głowy Ekscelencjo! Na jaki okres? Z pewnością uda nam się dogadać...\n\nZaciągnięty dług jednak nie maleje, a w dodatku dalej nie udało ci się całkowicie spłacić kredytu, który został przeznaczony na modernizacje floty, należącej do twojej rodziny. Czy możesz sobie pozwolić na oplatanie się kolejnymi węzami założonymi przez bankierów?",
-        "PlanetName": "Ziemia",
-        "Cost": 0,
-        "GainBudgetFrom": 400,
-        "GainPublicSatisfaction": 0,
-        "GainAuthority": -20,
-        "FoodDistribution": {
-          "Item1": 0,
-          "Item2": null,
-          "Item3": null
-        },
-        "EnergyDistribution": {
-          "Item1": 0,
-          "Item2": null,
-          "Item3": null
-        },
-        "IsActive": true,
-        "option1": "Zadlóż sie (+400).",
-        "option2": "Nie bierz kolejnego kredytu."
-      }
-    },
-    {
-      "Item1": 8,
-      "Item2": {
-        "Name": "Podatek od eksportu żywności",
-        "Description": "Sytuacja Skarbu Państwa nie jest najlepsza. Wręcz przeciwnie sprawy się mają na Wenus, gdzie moneta obraca się szybko i zdaje się wcale nie tracić na wartości. Podniesienie podatku od eksportu żywności wydaje się wręcz idealnym rozwiązaniem, aby uzupełnić pustki w Skarbcu - podniesienie opłat nie zaszkodzi tak zamożnej planecie jak Wenus.\n\nCoś jednak nie daje ci spokoju w tym pozornie idealnym rozwiązaniu...",
-        "PlanetName": "Wenus",
-        "Cost": 0,
-        "GainBudgetFrom": 25,
-        "GainPublicSatisfaction": -15,
-        "GainAuthority": 5,
-        "FoodDistribution": {
-          "Item1": 0,
-          "Item2": null,
-          "Item3": null
-        },
-        "EnergyDistribution": {
-          "Item1": 0,
-          "Item2": null,
-          "Item3": null
-        },
-        "IsActive": false,
-        "option1": "Podnieś podatki od eksportu żywnosci (+25 do każdej tury)",
-        "option2": "Zostaw Wenus w spokoju"
-      }
-    },
-    {
-      "Item1": 8,
-      "Item2": {
-        "Name": "Przekaż żywność z Wenus na Jowisz",
-        "Description": "Sytuacja na Księżycach dalej pozostaje dramatyczna. Większość farm i centr agralnych zostało zniszczonych podczas Wojny. Mieszkańcy borykają się z głodem.",
-        "PlanetName": "Jowisz",
-        "Cost": 250,
-        "GainBudgetFrom": 0,
-        "GainPublicSatisfaction": 10,
-        "GainAuthority": 10,
-        "FoodDistribution": {
-          "Item1": 25,
-          "Item2": "Wenus",
-          "Item3": "Jowisz"
-        },
-        "EnergyDistribution": {
-          "Item1": 0,
-          "Item2": null,
-          "Item3": null
-        },
-        "IsActive": true,
-        "option1": "Zorganizuj dostawę (25j).",
-        "option2": "Zostaw Jowisz sam sobie."
       }
     }
   ]

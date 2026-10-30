@@ -66,7 +66,7 @@ namespace DominiumPlanet.Views
 
         public static void GameWon()
         {
-            AnsiConsole.MarkupLine($"[green]Udało ci się przetrwać 9 cykli!.[/]");
+            AnsiConsole.MarkupLine($"[green]Udało ci się przetrwać 10 cykli!.[/]");
             Console.ReadKey();
         }
 

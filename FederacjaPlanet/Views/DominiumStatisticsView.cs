@@ -53,14 +53,10 @@ namespace DominiumPlanet.Views
             string authority = planet.Authority.ToString();
             if (planet.IsIndependent == false)
             {
-                if (planet.Food < 25) food = $"[yellow]{planet.Food.ToString()} [/]";
-                if (planet.Food < 15) food = $"[red]{planet.Food.ToString()} [/]";
-                if (planet.Energy < 25) energy = $"[yellow]{planet.Energy.ToString()} [/]";
-                if (planet.Energy < 15) energy = $"[red]{planet.Energy.ToString()} [/]";
-                if (planet.PublicSatisfaction < 25) satisfaction = $"[yellow]{planet.PublicSatisfaction.ToString()} [/]";
-                if (planet.PublicSatisfaction < 15) satisfaction = $"[red]{planet.PublicSatisfaction.ToString()} [/]";
-                if (planet.Authority< 25) authority = $"[yellow]{planet.Authority.ToString()} [/]";
-                if (planet.Authority< 15) authority = $"[red]{planet.Authority.ToString()} [/]";
+                if (planet.Food < 20) food = $"[red]{planet.Food.ToString()} [/]";
+                if (planet.Energy < 20) energy = $"[red]{planet.Energy.ToString()} [/]";
+                if (planet.PublicSatisfaction < 20) satisfaction = $"[red]{planet.PublicSatisfaction.ToString()} [/]";
+                if (planet.Authority< 20) authority = $"[red]{planet.Authority.ToString()} [/]";
             }
             
             table.AddRow(
