@@ -9,7 +9,7 @@ using DominiumPlanet.Views;
 
 namespace DominiumPlanet.Services
 {
-    internal class FileGameServices
+    public class FileGameServices
     {
         public void SaveGameToJSON(SaveDataModel saveDataModel)
         {

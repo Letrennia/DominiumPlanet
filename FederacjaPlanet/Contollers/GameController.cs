@@ -124,13 +124,13 @@ namespace DominiumPlanet.Contollers
             if (chooseOption == 0) decisionServices.WhichDecision(chosenDecision, gameState, planetList, raportList);
         }
 
-        private void EndTurn()
+        public void EndTurn()
         {
             gameServices.CallculateResources(planetList);
             gameServices.NextTurn(gameState, decisionList, planetList);
         }
         
-        private void SaveGame()
+        public void SaveGame()
         {
             gameState.Planets = planetList;
             gameState.Decisions = decisionList;
@@ -143,7 +143,7 @@ namespace DominiumPlanet.Contollers
             fileGameServices.SaveGameToJSON(save);
         }
         
-        private void LoadGame()
+        public void LoadGame()
         {
             SaveDataModel saveDataModel = fileGameServices.ReadGameFromJSON();
 
