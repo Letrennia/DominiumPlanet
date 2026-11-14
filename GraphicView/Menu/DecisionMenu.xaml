@@ -12,7 +12,7 @@
             <ItemsControl x:Name="DecisionItems">
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
-                        <Button Content="{Binding Name}" Margin="5"/>
+                        <Button Content="{Binding Name}" Margin="5" Click="Decision_Click"/>
                     </DataTemplate>
                 </ItemsControl.ItemTemplate>
             </ItemsControl>

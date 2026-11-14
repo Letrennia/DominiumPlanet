@@ -67,18 +67,19 @@ namespace DominiumPlanet.Contollers
             fileGameServices.SaveGameToJSON(save);
         }
 
-        public static void LoadGame(GameState gameState, FileGameServices fileGameServices,  List<Planet> planetList, List<Decision> decisionList, List<(int, Decision)> raportList)
+        public (GameState, List<Planet>, List<Decision>, List<(int, Decision)>) LoadGame(GameState gameState, FileGameServices fileGameServices,  
+            List<Planet> planetList, List<Decision> decisionList, List<(int, Decision)> raportList)
         {
             SaveDataModel saveDataModel = fileGameServices.ReadGameFromJSON();
 
-            if (saveDataModel?.GameState == null) return;
+            if (saveDataModel?.GameState == null) return (null, null, null, null);
 
             gameState = saveDataModel.GameState;
             planetList = gameState.Planets;
             decisionList = gameState.Decisions;
             raportList = saveDataModel.Raport ?? new List<(int, Decision)>();
 
-            if (raportList?.Count() == 0) return;
+            if (raportList?.Count() == 0) return (null, null, null, null);
 
             foreach (var raport in raportList)
             {
@@ -89,6 +90,8 @@ namespace DominiumPlanet.Contollers
                     dec.IsActive = raport.Item2.IsActive;
                 }
             }
+
+            return (gameState, planetList, decisionList, raportList);
 
         }
     }

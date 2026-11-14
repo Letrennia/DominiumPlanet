@@ -4,10 +4,16 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using DominiumPlanet.Models;
 using DominiumPlanet.Views;
+
 namespace DominiumPlanet.Services
 {
     public class GameServices
     {
+        public static Action<string, int>? ShowRiotMessage;
+        public static Action<string, int>? ShowRiotEndMessage;
+        public static Action<string>? GameOverIndependece;
+        public static Action? GameOverEmptyTreasure;
+        public static Action? GameOverDebt;
         public void CallculateResources(List<Planet> planetList)
         {
             for (int i = 0; i < planetList.Count; i++)
@@ -32,17 +38,20 @@ namespace DominiumPlanet.Services
 
         public void NextTurn(GameState gameState, List<Decision> decisionList, List<Planet> planetList)
         {
-
             gameState.Turn++;
-            if (gameState.Turn == 10)
-            {
-                ReactionView.GameWon();
-                Environment.Exit(0);
-            }
+
+            //do konsoli
+            //if (gameState.Turn == 10)
+            //{
+            //    //ReactionView.GameWon(); 
+            //    Environment.Exit(0);
+
+
+            //}
             checkGameConditions(gameState, planetList);
             gameState.Treasury += gameState.Income;
             DecisionServices.UpdateDecisionList(gameState.Turn, decisionList);
-            AnimationView.AnimationTurn(gameState.Turn);
+            //AnimationView.AnimationTurn(gameState.Turn); //do konsoli
         }
 
 
@@ -50,13 +59,16 @@ namespace DominiumPlanet.Services
         {
             if (gameState.Treasury == 0)
             {
-                ReactionView.GameOverEmptyTreasure();
+                //ReactionView.GameOverEmptyTreasure();
+                GameOverEmptyTreasure.Invoke();
+
                 Environment.Exit(0);
             }
 
             if (gameState.DebtCount == 4)
             {
-                ReactionView.GameOverDebt();
+                //ReactionView.GameOverDebt();
+                GameOverDebt.Invoke();
                 Environment.Exit(0);
             }
 
@@ -64,11 +76,14 @@ namespace DominiumPlanet.Services
             foreach (Planet planet in planetList)
             {
                 if (planet.IsIndependent == true) continue;
-                RiotCondition(planet, gameState);
-                RiotEndedCondition(planet, gameState);
+                RiotCondition(planet, gameState); 
+                RiotEndedCondition(planet, gameState); 
+
+
                 if (planet.Authority < 10)
                 {
-                    ReactionView.GameOverIndependece(planet);
+                    //ReactionView.GameOverIndependece(planet);
+                    GameOverIndependece.Invoke(planet.Name);
                     Environment.Exit(0);
                 }
                 if (planet.Food < 20)
@@ -98,7 +113,9 @@ namespace DominiumPlanet.Services
                     int money;
                     (planetName, money) = FindPlanetData(planet);
 
-                    ReactionView.Riot(planetName, money);
+                    ShowRiotMessage?.Invoke(planetName, money); //wpf
+                    //ReactionView.Riot(planetName, money); //do konsoli
+
                     gameState.Income -= money;
                     planet.Riot = true;
                 }
@@ -117,7 +134,8 @@ namespace DominiumPlanet.Services
                 int money;
                 (planetName, money) = FindPlanetData(planet);
                 gameState.Income += money;
-                ReactionView.RiotEnded(planetName, money);
+                //ReactionView.RiotEnded(planetName, money); //konsola
+                ShowRiotEndMessage?.Invoke(planetName, money);
 
             }
         }

@@ -12,4 +12,8 @@
     <ProjectReference Include="..\FederacjaPlanet\DominiumPlanet.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="DataWpf\" />
+  </ItemGroup>
+
 </Project>

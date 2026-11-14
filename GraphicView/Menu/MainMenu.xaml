@@ -10,7 +10,7 @@
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
             <TextBlock Text="Main Menu" FontSize="40" Margin="20"/>
             <Button Content="Raport" Margin="5" Click="ShowRaport_Click"/>
-            <Button Content="Przeglad planet" Margin="5" Click="SeePlanetsMenu_Click"/>
+            <Button Content="Przeglad planet" Margin="5" Click="ShowPlanetsMenu_Click"/>
             <Button Content="Przegladaj statystyki" Margin="5" Click="ShowStatistics_Click"/>
             <Button Content="Decyzje" Margin="5" Click="ShowDecisionMenu_Click"/>
             <Button Content="Zakoncz ture" Margin="5" Click="EndTurn_Click"/>

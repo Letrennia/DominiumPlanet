@@ -1,22 +1,18 @@
 ﻿using DominiumPlanet.Models;
 using DominiumPlanet.Views;
-using Spectre.Console;
-using System;
-using System.Collections.Generic;
-using System.Numerics;
-using System.Text;
 
 namespace DominiumPlanet.Services
 {
-    internal class DecisionServices
+    public class DecisionServices
     {
         public void WhichDecision(Decision chosenDecision, GameState gameState, List<Planet> planetList, List<(int, Decision)> raportList)
         {
-            if (gameState.Treasury - chosenDecision.Cost < 0)
-            {
-                ReactionView.NegativeReaction(); return;
-            }
-            ReactionView.PositiveReaction();
+            //do konsoli
+            //if (gameState.Treasury - chosenDecision.Cost < 0)
+            //{
+            //    ReactionView.NegativeReaction(); return;
+            //}
+            //ReactionView.PositiveReaction();
 
             raportList.Add((gameState.Turn, chosenDecision));
 
