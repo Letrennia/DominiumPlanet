@@ -7,11 +7,14 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-            <TextBlock x:Name="GameTitle" FontSize="40"/>
-            <TextBlock x:Name="GamePlot" FontSize="10" Margin="5" TextWrapping="Wrap"/>
-            <TextBlock x:Name="GameRules" FontSize="10" Margin="5"/>
-            <Button Content="Kontynuuj" Click="Continue_Click"/>
+        <Image Source="/Images/galaxy-screen2.jpg" Stretch="UniformToFill"/>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="50 0 50 0">
+            <TextBlock x:Name="GameTitle" FontSize="40" Foreground="AliceBlue" FontWeight="DemiBold" Margin="10" HorizontalAlignment="Center"/>
+            <TextBlock x:Name="GamePlot" FontSize="17" Foreground="AliceBlue" TextAlignment="Justify" TextWrapping="Wrap"/>
+            <TextBlock x:Name="GameRules" FontSize="17" Foreground="AliceBlue" TextAlignment="Justify" TextWrapping="Wrap"/>
+            <Button Content="Kontynuuj" Margin="10" Width="150" Height="40" FontSize="17" 
+                    Background="Transparent" BorderThickness="2" BorderBrush="AliceBlue" Foreground="AliceBlue"
+                    Click="Continue_Click"/>
         </StackPanel>
     </Grid>
 </UserControl>

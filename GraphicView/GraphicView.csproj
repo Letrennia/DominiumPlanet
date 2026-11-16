@@ -12,8 +12,14 @@
     <ProjectReference Include="..\FederacjaPlanet\DominiumPlanet.csproj" />
   </ItemGroup>
 
+	<ItemGroup>
+		<Folder Include="DataWpf\" />
+		<Resource Include="Images\space-resized.gif" />
+		<Resource Include="Images\galaxy-screen2.jpg" />
+	</ItemGroup>
+
   <ItemGroup>
-    <Folder Include="DataWpf\" />
+    <PackageReference Include="WpfAnimatedGif" Version="2.0.2" />
   </ItemGroup>
 
 </Project>
