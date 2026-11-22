@@ -122,7 +122,7 @@ namespace DominiumPlanet.Services
                             if (decisionList[i].Name == "Wygłoś mowę" || decisionList[i].Name == "Amnestia dla zdrajców") 
                                 decisionList[i].IsActive = false;
                             if (decisionList[i].Name == "Reformy na Marsie - los robotników" || 
-                                decisionList[i].Name == "Pertraktacje z Sojuszem Księżycowym o żywność i energię" ||
+                                decisionList[i].Name == "Pertraktacje z Sojuszem Księżycowym" ||
                                 decisionList[i].Name == "Ekspedycja na Mars")
                                 decisionList[i].IsActive = true;
                         }

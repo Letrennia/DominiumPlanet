@@ -118,11 +118,18 @@ namespace GraphicView
         }
 
 
-        public void EndTurn()
+        public async Task EndTurn()
         {
             utilsController.EndTurn(gameServices, gameState, planetList, decisionList);
+            var animationFile = new AnimationFile();
+            animationFile.SetTurn(gameState.Turn);
+
+            CurrentView.Content = animationFile;
+
+            await Task.Delay(3000);
 
             playerStatisticView.PlayerStatistics(gameState);
+            ShowMainMenu();
         }
         public void SaveGame()
         {

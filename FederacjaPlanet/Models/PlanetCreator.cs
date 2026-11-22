@@ -35,8 +35,8 @@ namespace DominiumPlanet.Models
             {
                 Name = "Wenus",
                 Description = "Dzięki rozwiniętej kulturze agralnej, sprzyjającej temperaturze i krótkiemu okresowi obiegu wokół Słońca, Wenus z czasem stało się spichlerzem Sol Dominium. " +
-                "Pola uprawne to jednak nie wszystko co ma do zaoferowania ta piękna planeta - jej wybrzeża zapełnione sa ośrodków wypoczynkowych i sportowych."+
-                "Podczas wojny, chociaż Wenus oficjalnie poparła władzę centralną, to tajemnicą poliszynela pozostaje fakt, że lokalne elity handlowały ze wszystkimi, którzy byli w stanie zapłacić.\n\n " +
+                "Pola uprawne to jednak nie wszystko co ma do zaoferowania ta piękna planeta - jej wybrzeża zapełnione sa ośrodków wypoczynkowych i sportowych. "+
+                "Podczas wojny, chociaż Wenus oficjalnie poparła władzę centralną, to tajemnicą poliszynela pozostaje fakt, że lokalne elity handlowały ze wszystkimi, którzy byli w stanie zapłacić.\n\n" +
                 "Dziś, Wenus zamiast szmaragdem w koronie, pozostaje raczej cierniem w boku rządzących, gdzie zamiast szukać wspólnego dobra każdy liczy na szybkie napełnienie własnych kieszeni, a " +
                 "może i uzyskanie czegoś więcej?",
                 Food = 200,
@@ -122,7 +122,7 @@ namespace DominiumPlanet.Models
             Planet moonAliance = new Planet
             {
                 Name = "SK",
-                Description = "Sojusz Ksieżycowy, czyli zrzeszenie powstałe w wyniku dążeń do uzyskania niepodległości przez ksieżyce Saturna, Uranu i Neptuna. Niewiele wiadomo o sytuacji wewnętrznej" +
+                Description = "Sojusz Ksieżycowy, czyli zrzeszenie powstałe w wyniku dążeń do uzyskania niepodległości przez ksieżyce Saturna, Uranu i Neptuna. Niewiele wiadomo o sytuacji wewnętrznej " +
                 "Sojuszu, ale jak donoszą szpiedzy Dominium - gospodarka powoli, lecz skutecznie się odbudowuje.",
                 Food = 200,
                 Energy = 90,

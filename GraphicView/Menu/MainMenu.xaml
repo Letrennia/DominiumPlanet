@@ -7,15 +7,16 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
+        <Image Source="/Images/galaxy-screen3.jpg" Stretch="UniformToFill"/>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-            <TextBlock Text="Main Menu" FontSize="40" Margin="20"/>
-            <Button Content="Raport" Margin="5" Click="ShowRaport_Click"/>
-            <Button Content="Przeglad planet" Margin="5" Click="ShowPlanetsMenu_Click"/>
-            <Button Content="Przegladaj statystyki" Margin="5" Click="ShowStatistics_Click"/>
-            <Button Content="Decyzje" Margin="5" Click="ShowDecisionMenu_Click"/>
-            <Button Content="Zakoncz ture" Margin="5" Click="EndTurn_Click"/>
-            <Button Content="Zapisz gre" Margin="5" Click="SaveGame_Click"/>
-            <Button Content="Wyjdz" Margin="5" Click="EndGame_Click"/>
+            <TextBlock Text="Main Menu" FontSize="40" Foreground="AliceBlue" FontWeight="DemiBold" Margin="10"/>
+            <Button Content="Raport" Margin="5" Width="200" Height="40" FontSize="20" Click="ShowRaport_Click"/>
+            <Button Content="Przegląd planet" Margin="5" Width="200" Height="40" FontSize="20" Click="ShowPlanetsMenu_Click"/>
+            <Button Content="Przeglądaj statystyki" Margin="5" Width="200" Height="40" FontSize="20" Click="ShowStatistics_Click"/>
+            <Button Content="Decyzje" Margin="5" Width="200" Height="40" FontSize="20" Click="ShowDecisionMenu_Click"/>
+            <Button Content="Zakoncz ture" Margin="5" Width="200" Height="40" FontSize="20" Click="EndTurn_Click"/>
+            <Button Content="Zapisz grę" Margin="5" Width="200" Height="40" FontSize="20" Click="SaveGame_Click"/>
+            <Button Content="Wyjdź" Margin="5" Width="200" Height="40" FontSize="20" Click="EndGame_Click"/>
         </StackPanel>
     </Grid>
 </UserControl>

@@ -1,6 +1,8 @@
 ﻿using DominiumPlanet.Models;
+//using System.Drawing;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Media;
 
 namespace GraphicView.Statistics
 {
@@ -32,7 +34,10 @@ namespace GraphicView.Statistics
                     whichTurn = raport.Item1;
                     RaportItems.Items.Add(new TextBlock
                     {
-                        Text = $"Tura {whichTurn}"
+                        Text = $"Tura {whichTurn}",
+                        Foreground = Brushes.PaleVioletRed,
+                        FontSize = 22,
+                        Margin = new Thickness(5)
                     });
                 }
                 StackPanel decisionPanel = new StackPanel
@@ -42,7 +47,9 @@ namespace GraphicView.Statistics
 
                 decisionPanel.Children.Add(new TextBlock
                 {
-                    Text = $"- {raport.Item2.Name}   Koszt: {raport.Item2.Cost}"
+                    Text = $"- {raport.Item2.Name}   Koszt: {raport.Item2.Cost}",
+                    Foreground = Brushes.AliceBlue,
+                    FontSize = 20
                 });
 
                 RaportItems.Items.Add(decisionPanel);

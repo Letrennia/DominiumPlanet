@@ -16,6 +16,15 @@
 		<Folder Include="DataWpf\" />
 		<Resource Include="Images\space-resized.gif" />
 		<Resource Include="Images\galaxy-screen2.jpg" />
+		<Resource Include="Images\galaxy-screen3.jpg" />
+		<Resource Include="Images\planet-screen.jpg" />
+		<Resource Include="Images\space-ship.jpg" />
+		<Resource Include="Images\Jowisz.jpg" />
+		<Resource Include="Images\Mars.jpg" />
+		<Resource Include="Images\Merkury.jpg" />
+		<Resource Include="Images\Wenus.jpg" />
+		<Resource Include="Images\SK.jpg" />
+		<Resource Include="Images\Ziemia.jpg" />
 	</ItemGroup>
 
   <ItemGroup>

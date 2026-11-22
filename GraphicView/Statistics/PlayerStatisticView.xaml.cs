@@ -16,7 +16,7 @@ namespace GraphicView.Statistics
         public void PlayerStatistics(GameState gameState)
         {
             PlayerTurn.Text = $"Tura: {gameState.Turn.ToString()}";
-            PlayerTreasury.Text = $"Skarb: {gameState.Treasury.ToString()}      ";
+            PlayerTreasury.Text = $"Skarb: {gameState.Treasury.ToString()}";
             PlayerDebt.Text = $"Dług: {gameState.Debt.ToString()}";
         }
 

@@ -1,7 +1,7 @@
 {
   "GameState": {
-    "Turn": 5,
-    "Treasury": 785,
+    "Turn": 4,
+    "Treasury": 90,
     "Debt": 1000,
     "DebtCount": 1,
     "Income": 150,
@@ -23,10 +23,10 @@
       {
         "Name": "Wenus",
         "Description": "Dzięki rozwiniętej kulturze agralnej, sprzyjającej temperaturze i krótkiemu okresowi obiegu wokół Słońca, Wenus z czasem stało się spichlerzem Sol Dominium. Pola uprawne to jednak nie wszystko co ma do zaoferowania ta piękna planeta - jej wybrzeża zapełnione sa ośrodków wypoczynkowych i sportowych.Podczas wojny, chociaż Wenus oficjalnie poparła władzę centralną, to tajemnicą poliszynela pozostaje fakt, że lokalne elity handlowały ze wszystkimi, którzy byli w stanie zapłacić.\n\n Dziś, Wenus zamiast szmaragdem w koronie, pozostaje raczej cierniem w boku rządzących, gdzie zamiast szukać wspólnego dobra każdy liczy na szybkie napełnienie własnych kieszeni, a może i uzyskanie czegoś więcej?",
-        "Food": 495,
-        "Energy": 140,
-        "PublicSatisfaction": 70,
-        "Authority": 35,
+        "Food": 415,
+        "Energy": 135,
+        "PublicSatisfaction": 85,
+        "Authority": 40,
         "FoodProduction": 100,
         "EnergyProduction": 15,
         "FoodUsage": 20,
@@ -37,10 +37,10 @@
       {
         "Name": "Mars",
         "Description": "Miejsce skrajnosci, gdzie monumentalne wieżowce sąsiadują z robotniczymi osiedlami. Ze względu na bogate i rozległe złoża surowców, większość powierzchni Marsa pokrywają szyby i fabryki - to właśnie tutaj przybywają ludzie w poszukiwaniu szczęścia i szybkiego zarobku. Co faktycznie znajdują? Jeśli są inwestorami to najczęściej hermetyczne środowisko, niechętne do przyjmowania konkurencji. Natomiast jeśli interesuje ich praca, nie musza się martwić - każda para rąk do pracy się przyda! Inna sprawa gdy chodzi o wynagrodzenie - stawki są marne, a od kiedy gospodarka przestawiła się na wspieranie marynarki, Mars dalej nie może dojść do siebie.\n\nNierówności społeczne są większe niż kiedykolwiek, a ludzie przepracowani i nieodżywieni.\nWłaścicieli fabryk to nie przejmuje - w końcu nowych pracowników ciągle przybywa, a wyniki nigdy nie były lepsze!\n\nIle czasu minie nim głodujący wyjdą na ulice?",
-        "Food": 0,
-        "Energy": 400,
-        "PublicSatisfaction": 23,
-        "Authority": 50,
+        "Food": 10,
+        "Energy": 320,
+        "PublicSatisfaction": 36,
+        "Authority": 75,
         "FoodProduction": 10,
         "EnergyProduction": 70,
         "FoodUsage": 20,
@@ -51,10 +51,10 @@
       {
         "Name": "Ziemia",
         "Description": "To właśnie od tej planety wszystko się zaczęło. Z niej wyruszyły pierwsze ekspedycje badawcze, a później statki pasażerskie i towarowe. Nic więc dziwnego, że to Ziemia została stolicą Dominium i to właśnie tutaj znajduje się główna siedziba Władcy.\n\nPomimo upływu lat i wyczerpania surowców, Ziemia nie jest jednak jedynie reliktem przeszłości - dzięki swojej długiej historii i prestiżowi, wiele firm i instytucji ma tutaj swój oddział - w tym wszystkie najważniejsze banki. Natomiast błędem byłoby zakładać, że jest to arkadia - w każdym kącie może czyhać niebezpieczeństwo, a każdy uśmiech skrywać drwinę lub potencjalny spisek.\n\nO bezpieczeństwo Władcy Dominium troszczy się Gwardia Przyboczna. Może podniosłoby Cię to na duchu, gdyby nie świadomość, że połowa Twoich poprzedników została przez nią obalona.",
-        "Food": 50,
-        "Energy": 20,
-        "PublicSatisfaction": 60,
-        "Authority": 45,
+        "Food": 60,
+        "Energy": 65,
+        "PublicSatisfaction": 70,
+        "Authority": 60,
         "FoodProduction": 10,
         "EnergyProduction": 10,
         "FoodUsage": 20,
@@ -65,10 +65,10 @@
       {
         "Name": "Jowisz",
         "Description": "A właściwie to jego księzyce. Kiedyś miejsca słynące z wielu ośrodków kluturalnych oraz ogromnych farm centr danych. Dziś ruina. To właśnie na ksiezycach Jowisza miały miejsce najbardziej zażarce walki podczas Wojny.Teraz gdy podpisano rozejm, a 80% infrastruktury zostało zniszczone, mieszkańcy mogą jedynie liczyć na pomoc innych planet i Plan Odbudowy zapowiedziany jeszcze za panowania Hadriana.\n\nWielu uważa, że Księżyce Jowisza już nigdy nie odzyskają dawnej świetności i lepiej byłoby zainwestować w terraformacje innego miejsca zamiast marnować fundusze na to gruzowisko.\n\nCzy Ksiezyce Jowisza mają jeszcze szanse na lepszą przyszłość?",
-        "Food": 25,
-        "Energy": 10,
-        "PublicSatisfaction": 17,
-        "Authority": 56,
+        "Food": 30,
+        "Energy": 15,
+        "PublicSatisfaction": 43,
+        "Authority": 66,
         "FoodProduction": 5,
         "EnergyProduction": 5,
         "FoodUsage": 10,
@@ -154,7 +154,7 @@
           "Item2": null,
           "Item3": null
         },
-        "IsActive": false,
+        "IsActive": true,
         "option1": "Podnieś podatki od eksportu żywnosci (+25 do każdej tury)",
         "option2": "Zostaw Wenus w spokoju"
       },
@@ -264,12 +264,12 @@
           "Item2": null,
           "Item3": null
         },
-        "IsActive": true,
+        "IsActive": false,
         "option1": "Wprowadz reformy na Marsie.",
         "option2": "Nie ryzykuj."
       },
       {
-        "Name": "Pertraktacje z Sojuszem Księżycowym o żywność i energię",
+        "Name": "Pertraktacje z Sojuszem Księżycowym",
         "Description": "Twoi zaufani słudzy donoszą, że sytuacja w Sojuszu Księżycowym jest nie tylko stabilna, ale że intensywnie rozwija się tam przemysł i sektor usług. Twój poprzednik częściej wojował z Władcami księżyców niż się z nimi dogadywał. Choć wspomnienia strzałów działek plazmowych wciąż nie dają ci spać w niektóre noce, może nadszedł już czas by zakopać wojenny topór i zacząć myśleć o współpracy?",
         "PlanetName": "",
         "Cost": 100,
@@ -308,7 +308,7 @@
           "Item2": null,
           "Item3": null
         },
-        "IsActive": true,
+        "IsActive": false,
         "option1": "Prześlij żywność na Mars.",
         "option2": "Zachowaj żywność sobie."
       },
@@ -374,7 +374,7 @@
           "Item2": null,
           "Item3": null
         },
-        "IsActive": true,
+        "IsActive": false,
         "option1": "Wyślij inspekcje do 5 głównych zakładów.",
         "option2": "Nie rób inspekcji - masz ważniejsze rzeczy na głowie."
       },
@@ -462,7 +462,7 @@
           "Item2": "Mars",
           "Item3": "Ziemia"
         },
-        "IsActive": true,
+        "IsActive": false,
         "option1": "Zamów dostawę (30j).",
         "option2": "Cena jest zbyt wysoka."
       }
@@ -471,6 +471,106 @@
   "Raport": [
     {
       "Item1": 1,
+      "Item2": {
+        "Name": "Wygłoś mowę",
+        "Description": "Choć nie jest to obowiązek, to jednak wielu Władców decyduje się w ciągu najbliższych dni od przejęcia władzy na wygłoszenie mowy zapowiadającej dalsze rządy.",
+        "PlanetName": "",
+        "Cost": 0,
+        "GainBudgetFrom": 0,
+        "GainPublicSatisfaction": 0,
+        "GainAuthority": 10,
+        "FoodDistribution": {
+          "Item1": 0,
+          "Item2": null,
+          "Item3": null
+        },
+        "EnergyDistribution": {
+          "Item1": 0,
+          "Item2": null,
+          "Item3": null
+        },
+        "IsActive": false,
+        "option1": "Wygłoś przemowę.",
+        "option2": "Nie wygłaszaj przemowy - liczą się czyny nie słowa."
+      }
+    },
+    {
+      "Item1": 1,
+      "Item2": {
+        "Name": "Przekaż żywność z Wenus na Jowisz",
+        "Description": "Sytuacja na Księżycach dalej pozostaje dramatyczna. Większość farm i centr agralnych zostało zniszczonych podczas Wojny. Mieszkańcy borykają się z głodem.",
+        "PlanetName": "Jowisz",
+        "Cost": 190,
+        "GainBudgetFrom": 0,
+        "GainPublicSatisfaction": 10,
+        "GainAuthority": 10,
+        "FoodDistribution": {
+          "Item1": 25,
+          "Item2": "Wenus",
+          "Item3": "Jowisz"
+        },
+        "EnergyDistribution": {
+          "Item1": 0,
+          "Item2": null,
+          "Item3": null
+        },
+        "IsActive": true,
+        "option1": "Zorganizuj dostawę (25j).",
+        "option2": "Zostaw Jowisz sam sobie."
+      }
+    },
+    {
+      "Item1": 3,
+      "Item2": {
+        "Name": "Inspekcja fabryk na Marsie",
+        "Description": "Nie jest wielką tajemnicą jak się mają sprawy na Marsie. Ostatnio jednak coraz głośnie mówi się o możliwości zamieszek. ",
+        "PlanetName": "Mars",
+        "Cost": 120,
+        "GainBudgetFrom": 0,
+        "GainPublicSatisfaction": 5,
+        "GainAuthority": 10,
+        "FoodDistribution": {
+          "Item1": 0,
+          "Item2": null,
+          "Item3": null
+        },
+        "EnergyDistribution": {
+          "Item1": 0,
+          "Item2": null,
+          "Item3": null
+        },
+        "IsActive": false,
+        "option1": "Wyślij inspekcje do 5 głównych zakładów.",
+        "option2": "Nie rób inspekcji - masz ważniejsze rzeczy na głowie."
+      }
+    },
+    {
+      "Item1": 4,
+      "Item2": {
+        "Name": "Ogranicz wydatki na wojsko",
+        "Description": "Wojna skończyła się rok temu, a mimo to na wojsko dalej przeznaczane są wysokie kwoty. 'Być może ludzie zasługują na pokój' mówisz.\n\nTwoi doradcy się z tobą nie zgadzają. Przypominają ci o zagrożeniu ze strony Sojuszu Księżycowego, o tym co się stało z księżycami Jowisza. A jednak jeśli nic nie zrobisz to niedługo skarbiec będzie całkowicie pusty.",
+        "PlanetName": "",
+        "Cost": 0,
+        "GainBudgetFrom": 250,
+        "GainPublicSatisfaction": 5,
+        "GainAuthority": -8,
+        "FoodDistribution": {
+          "Item1": 0,
+          "Item2": null,
+          "Item3": null
+        },
+        "EnergyDistribution": {
+          "Item1": 0,
+          "Item2": null,
+          "Item3": null
+        },
+        "IsActive": false,
+        "option1": "Ogranicz wydatki na wojsko (+250).",
+        "option2": "Nie rób inspekcji - masz ważniejsze rzeczy na głowie."
+      }
+    },
+    {
+      "Item1": 4,
       "Item2": {
         "Name": "Przekaż środki na odbudowę Jowisza",
         "Description": "Podczas twojej przemowy padły kluczowe słowa 'Dołożę wszelkich starań, aby naprawić krzywdy wyrządzone rządami mojego poprzednika. [...] Nie pozwolę by Jowisz podzielił los Merkurego!\n\nTo wszystko piękne słowa, ale czy coś za nimi stoi?",
@@ -497,37 +597,12 @@
     {
       "Item1": 4,
       "Item2": {
-        "Name": "Przekaż żywność z Wenus na Jowisz",
-        "Description": "Sytuacja na Księżycach dalej pozostaje dramatyczna. Większość farm i centr agralnych zostało zniszczonych podczas Wojny. Mieszkańcy borykają się z głodem.",
-        "PlanetName": "Jowisz",
-        "Cost": 190,
+        "Name": "Reformy na Marsie - los robotników",
+        "Description": "Wszyscy, nawet Twój poprzednik, zdawali sobie sprawę z tego jak traktowani są robotnicy na Marsie. Wszyscy, nawet Twój poprzednik zdawali sobie sprawę, że interwencja na niewiele by się zdała, a mogłaby sprawić że elity Marsa obróciłyby się przeciwko Władzy Centralnej. W dniu ślubowania wiele myśli kłębiło się w Twojej głowie, ale najgłośniejszą była 'muszę pokazać wszystkim że nie jestem jak Hadrian. Muszę przywrócić światu równowagę'.\n\nTo twoja szansa by pokazać się jako miłosierny Władca.",
+        "PlanetName": "Mars",
+        "Cost": 100,
         "GainBudgetFrom": 0,
-        "GainPublicSatisfaction": 10,
-        "GainAuthority": 10,
-        "FoodDistribution": {
-          "Item1": 25,
-          "Item2": "Wenus",
-          "Item3": "Jowisz"
-        },
-        "EnergyDistribution": {
-          "Item1": 0,
-          "Item2": null,
-          "Item3": null
-        },
-        "IsActive": true,
-        "option1": "Zorganizuj dostawę (25j).",
-        "option2": "Zostaw Jowisz sam sobie."
-      }
-    },
-    {
-      "Item1": 4,
-      "Item2": {
-        "Name": "Podatek od eksportu żywności",
-        "Description": "Sytuacja Skarbu Państwa nie jest najlepsza. Wręcz przeciwnie sprawy się mają na Wenus, gdzie moneta obraca się szybko i zdaje się wcale nie tracić na wartości. Podniesienie podatku od eksportu żywności wydaje się wręcz idealnym rozwiązaniem, aby uzupełnić pustki w Skarbcu - podniesienie opłat nie zaszkodzi tak zamożnej planecie jak Wenus.\n\nCoś jednak nie daje ci spokoju w tym pozornie idealnym rozwiązaniu...",
-        "PlanetName": "Wenus",
-        "Cost": 0,
-        "GainBudgetFrom": 25,
-        "GainPublicSatisfaction": -15,
+        "GainPublicSatisfaction": 2,
         "GainAuthority": 5,
         "FoodDistribution": {
           "Item1": 0,
@@ -540,33 +615,33 @@
           "Item3": null
         },
         "IsActive": false,
-        "option1": "Podnieś podatki od eksportu żywnosci (+25 do każdej tury)",
-        "option2": "Zostaw Wenus w spokoju"
+        "option1": "Wprowadz reformy na Marsie.",
+        "option2": "Nie ryzykuj."
       }
     },
     {
       "Item1": 4,
       "Item2": {
-        "Name": "Ogranicz wydatki na wojsko",
-        "Description": "Wojna skończyła się rok temu, a mimo to na wojsko dalej przeznaczane są wysokie kwoty. 'Być może ludzie zasługują na pokój' mówisz.\n\nTwoi doradcy się z tobą nie zgadzają. Przypominają ci o zagrożeniu ze strony Sojuszu Księżycowego, o tym co się stało z księżycami Jowisza. A jednak jeśli nic nie zrobisz to niedługo skarbiec będzie całkowicie pusty.",
-        "PlanetName": "",
-        "Cost": 0,
-        "GainBudgetFrom": 250,
-        "GainPublicSatisfaction": 5,
-        "GainAuthority": -8,
+        "Name": "Zakup zapas energii dla Ziemi",
+        "Description": "Ziemia może i być siedzibą Władcy, ale nie zmienia to faktu, że jeśli chodzi o surowce to nie ma tu czego szukać.",
+        "PlanetName": "Ziemia",
+        "Cost": 300,
+        "GainBudgetFrom": 0,
+        "GainPublicSatisfaction": 10,
+        "GainAuthority": 5,
         "FoodDistribution": {
           "Item1": 0,
           "Item2": null,
           "Item3": null
         },
         "EnergyDistribution": {
-          "Item1": 0,
-          "Item2": null,
-          "Item3": null
+          "Item1": 30,
+          "Item2": "Mars",
+          "Item3": "Ziemia"
         },
         "IsActive": false,
-        "option1": "Ogranicz wydatki na wojsko (+250).",
-        "option2": "Nie rób inspekcji - masz ważniejsze rzeczy na głowie."
+        "option1": "Zamów dostawę (30j).",
+        "option2": "Cena jest zbyt wysoka."
       }
     }
   ]

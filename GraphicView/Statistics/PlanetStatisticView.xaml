@@ -7,138 +7,143 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-        </Grid.RowDefinitions>
+        <Image Source="/Images/galaxy-screen3.jpg" Stretch="UniformToFill"/>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="50 50 50 0">
 
-        <FlowDocumentScrollViewer Grid.Row="0" HorizontalAlignment="Center" IsToolBarVisible="False" VerticalScrollBarVisibility="Hidden" Width="1200">
-            <FlowDocument>
+            <FlowDocumentScrollViewer IsToolBarVisible="False" VerticalScrollBarVisibility="Hidden">
+                <FlowDocument>
 
-                <Table CellSpacing="5">
+                    <Table CellSpacing="5">
 
-                    <Table.Columns>
-                        <TableColumn Width="70"/>
-                        <TableColumn Width="70"/>
-                        <TableColumn Width="100"/>
-                        <TableColumn Width="100"/>
-                        <TableColumn Width="100"/>
-                        <TableColumn Width="140"/>
-                        <TableColumn Width="140"/>
-                        <TableColumn Width="120"/>
-                        <TableColumn Width="120"/>
-                    </Table.Columns>
+                        <Table.Columns>
+                            <TableColumn Width="Auto"/>
+                            <TableColumn Width="Auto"/>
+                            <TableColumn Width="Auto"/>
+                            <TableColumn Width="Auto"/>
+                            <TableColumn Width="Auto"/>
+                            <TableColumn Width="Auto"/>
+                            <TableColumn Width="Auto"/>
+                            <TableColumn Width="Auto"/>
+                            <TableColumn Width="Auto"/>
+                        </Table.Columns>
 
-                    <TableRowGroup>
+                        <TableRowGroup>
 
-                        <TableRow Background="SkyBlue">
-                            <TableCell ColumnSpan="9" TextAlignment="Center">
-                                <Paragraph FontSize="24pt" FontWeight="Bold">Sol Dominium</Paragraph>
-                            </TableCell>
-                        </TableRow>
+                            <TableRow Background="#FF80364E">
+                                <TableCell ColumnSpan="9" TextAlignment="Center">
+                                    <Paragraph FontWeight="DemiBold" FontSize="35" Foreground="AliceBlue">Sol Dominium</Paragraph>
+                                </TableCell>
+                            </TableRow>
 
-                        <TableRow Background="LightGoldenrodYellow">
-                            <TableCell>
-                                <Paragraph FontSize="10pt" FontWeight="Bold" TextAlignment="Center" >Planeta</Paragraph>
-                            </TableCell>
-                            <TableCell>
-                                <Paragraph FontSize="10pt" FontWeight="Bold" TextAlignment="Center" >Żywność</Paragraph>
-                            </TableCell>
-                            <TableCell>
-                                <Paragraph FontSize="10pt" FontWeight="Bold" TextAlignment="Center">Energia</Paragraph>
-                            </TableCell>
-                            <TableCell>
-                                <Paragraph FontSize="10pt" FontWeight="Bold" TextAlignment="Center">Zadowolenie społeczne</Paragraph>
-                            </TableCell>
-                            <TableCell>
-                                <Paragraph FontSize="10pt" FontWeight="Bold" TextAlignment="Center">Autorytet władzy</Paragraph>
-                            </TableCell>
-                            <TableCell>
-                                <Paragraph FontSize="10pt" FontWeight="Bold" TextAlignment="Center">Produkcja żywności (co turę)</Paragraph>
-                            </TableCell>
-                            <TableCell>
-                                <Paragraph FontSize="10pt" FontWeight="Bold" TextAlignment="Center">Produkcja energii (co turę)</Paragraph>
-                            </TableCell>
-                            <TableCell>
-                                <Paragraph FontSize="10pt" FontWeight="Bold" TextAlignment="Center">Zużycie żywności (co turę)</Paragraph>
-                            </TableCell>
-                            <TableCell>
-                                <Paragraph FontSize="10pt" FontWeight="Bold" TextAlignment="Center">Zużycie energii (co turę)</Paragraph>
-                            </TableCell>
-                        </TableRow>
-                    </TableRowGroup>
-                    <TableRowGroup x:Name="PlanetRows"/>
+                                <TableRow Background="PaleVioletRed" Foreground="AliceBlue" FontSize="14" FontWeight="DemiBold">
+                                <TableCell>
+                                    <Paragraph TextAlignment="Center" >Planeta</Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph TextAlignment="Center" >Żywność</Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph TextAlignment="Center">Energia</Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph TextAlignment="Center">Zadowolenie społeczne</Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph TextAlignment="Center">Autorytet władzy</Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph TextAlignment="Center">Produkcja żywności (co turę)</Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph TextAlignment="Center">Produkcja energii (co turę)</Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph TextAlignment="Center">Zużycie żywności (co turę)</Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph TextAlignment="Center">Zużycie energii (co turę)</Paragraph>
+                                </TableCell>
+                            </TableRow>
+                        </TableRowGroup>
+                        <TableRowGroup x:Name="PlanetRows" FontSize="14" Foreground="AliceBlue"/>
 
-                </Table>
-            </FlowDocument>
-        </FlowDocumentScrollViewer>
+                    </Table>
+                </FlowDocument>
+            </FlowDocumentScrollViewer>
+            </StackPanel>
 
-        <FlowDocumentScrollViewer Grid.Row="1" HorizontalAlignment="Center" IsToolBarVisible="False" VerticalScrollBarVisibility="Hidden" Width="1200">
-            <FlowDocument>
+            <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="50">
+            <FlowDocumentScrollViewer IsToolBarVisible="False" VerticalScrollBarVisibility="Hidden">
+                <FlowDocument>
 
-                <Table CellSpacing="5">
+                    <Table CellSpacing="5">
 
-                    <Table.Columns>
-                        <TableColumn Width="70"/>
-                        <TableColumn Width="70"/>
-                        <TableColumn Width="100"/>
-                        <TableColumn Width="100"/>
-                        <TableColumn Width="100"/>
-                        <TableColumn Width="140"/>
-                        <TableColumn Width="140"/>
-                        <TableColumn Width="120"/>
-                        <TableColumn Width="120"/>
-                    </Table.Columns>
+                        <Table.Columns>
+                            <TableColumn Width="Auto"/>
+                            <TableColumn Width="Auto"/>
+                            <TableColumn Width="Auto"/>
+                            <TableColumn Width="Auto"/>
+                            <TableColumn Width="Auto"/>
+                            <TableColumn Width="Auto"/>
+                            <TableColumn Width="Auto"/>
+                            <TableColumn Width="Auto"/>
+                            <TableColumn Width="Auto"/>
+                        </Table.Columns>
 
-                    <TableRowGroup>
+                        <TableRowGroup>
 
-                        <TableRow Background="SkyBlue">
-                            <TableCell ColumnSpan="9" TextAlignment="Center">
-                                <Paragraph FontSize="24pt" FontWeight="Bold">Planety spoza Sol Dominium</Paragraph>
-                            </TableCell>
-                        </TableRow>
+                            <TableRow Background="#FF80364E">
+                                <TableCell ColumnSpan="9" TextAlignment="Center">
+                                        <Paragraph FontWeight="DemiBold" FontSize="35" Foreground="AliceBlue">Planety spoza Sol Dominium</Paragraph>
+                                </TableCell>
+                            </TableRow>
 
-                        <TableRow Background="LightGoldenrodYellow">
-                            <TableCell>
-                                <Paragraph FontSize="10pt" FontWeight="Bold" TextAlignment="Center" >Planeta</Paragraph>
-                            </TableCell>
-                            <TableCell>
-                                <Paragraph FontSize="10pt" FontWeight="Bold" TextAlignment="Center" >Żywność</Paragraph>
-                            </TableCell>
-                            <TableCell>
-                                <Paragraph FontSize="10pt" FontWeight="Bold" TextAlignment="Center">Energia</Paragraph>
-                            </TableCell>
-                            <TableCell>
-                                <Paragraph FontSize="10pt" FontWeight="Bold" TextAlignment="Center">Zadowolenie społeczne</Paragraph>
-                            </TableCell>
-                            <TableCell>
-                                <Paragraph FontSize="10pt" FontWeight="Bold" TextAlignment="Center">Autorytet władzy</Paragraph>
-                            </TableCell>
-                            <TableCell>
-                                <Paragraph FontSize="10pt" FontWeight="Bold" TextAlignment="Center">Produkcja żywności (co turę)</Paragraph>
-                            </TableCell>
-                            <TableCell>
-                                <Paragraph FontSize="10pt" FontWeight="Bold" TextAlignment="Center">Produkcja energii (co turę)</Paragraph>
-                            </TableCell>
-                            <TableCell>
-                                <Paragraph FontSize="10pt" FontWeight="Bold" TextAlignment="Center">Zużycie żywności (co turę)</Paragraph>
-                            </TableCell>
-                            <TableCell>
-                                <Paragraph FontSize="10pt" FontWeight="Bold" TextAlignment="Center">Zużycie energii (co turę)</Paragraph>
-                            </TableCell>
-                        </TableRow>
-                    </TableRowGroup>
-                    <TableRowGroup x:Name="IndependentPlanetRows"/>
+                                <TableRow Background="PaleVioletRed" FontSize="14" FontWeight="DemiBold" Foreground="AliceBlue">
+                                <TableCell>
+                                    <Paragraph TextAlignment="Center" >Planeta</Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph TextAlignment="Center" >Żywność</Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph TextAlignment="Center">Energia</Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph TextAlignment="Center">Zadowolenie społeczne</Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph TextAlignment="Center">Autorytet władzy</Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph TextAlignment="Center">Produkcja żywności (co turę)</Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph TextAlignment="Center">Produkcja energii (co turę)</Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph TextAlignment="Center">Zużycie żywności (co turę)</Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph TextAlignment="Center">Zużycie energii (co turę)</Paragraph>
+                                </TableCell>
+                            </TableRow>
+                        </TableRowGroup>
+                            <TableRowGroup x:Name="IndependentPlanetRows" FontSize="14" Foreground="AliceBlue"/>
 
-                </Table>
-            </FlowDocument>
-        </FlowDocumentScrollViewer>
+                    </Table>
+                </FlowDocument>
+            </FlowDocumentScrollViewer>
+            </StackPanel>
 
-        <Label Grid.Row="2" HorizontalAlignment="Center" Content="SK - Sojusz księżycowy"/>
-        <Button Grid.Row="3" Content="Wyjdź" Margin="5" Click="LeaveStatistics_Click"/>
-
-        
+            <Label Grid.Row="2" HorizontalAlignment="Center" Content="SK - Sojusz Księżycowy" FontSize="20" Foreground="AliceBlue"/>
+            <Button Grid.Row="3" Content="Wyjdź" Margin="10" Width="150" Height="40" FontSize="17" Click="LeaveStatistics_Click"/>
+        </Grid>
     </Grid>
 </UserControl>

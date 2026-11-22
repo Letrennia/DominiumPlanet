@@ -109,7 +109,7 @@ namespace DominiumPlanet.Models
             };
             Decision decision7 = new Decision
             {
-                Name = "Pertraktacje z Sojuszem Księżycowym o żywność i energię",
+                Name = "Pertraktacje z Sojuszem Księżycowym",
                 Description = "Twoi zaufani słudzy donoszą, że sytuacja w Sojuszu Księżycowym jest nie tylko stabilna, ale że intensywnie rozwija się tam przemysł i sektor usług. " +
                 "Twój poprzednik częściej wojował z Władcami księżyców niż się z nimi dogadywał. Choć wspomnienia strzałów działek plazmowych wciąż nie dają ci spać w niektóre noce, " +
                 "może nadszedł już czas by zakopać wojenny topór i zacząć myśleć o współpracy?",

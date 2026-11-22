@@ -7,24 +7,15 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="auto"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="auto"/>
-            <RowDefinition Height="auto"/>
-        </Grid.RowDefinitions>
-
-        <TextBlock x:Name="DecisionName" FontSize="32" FontWeight="Bold" TextAlignment="Center" Margin="10"/>
-        <TextBlock Grid.Row="1" x:Name="DecisionDescription" FontSize="16" TextAlignment="Center" Margin="10"/>
-        <TextBlock Grid.Row="2" x:Name="DecisionCost" FontSize="16" TextAlignment="Center" Margin="10"/>
-
-        <StackPanel Grid.Row="3">
-            <Button x:Name="DecisionOption1" FontSize="16" Margin="10" Click="Option1_Click"/>
-            <Button x:Name="DecisionOption2" FontSize="16" Margin="10" Click="Option2_Click"/>
-            
+        <Image Source="/Images/galaxy-screen3.jpg" Stretch="UniformToFill"/>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="50 0 50 0">
+            <TextBlock x:Name="DecisionName" TextAlignment="Center" FontSize="40" Foreground="AliceBlue" FontWeight="DemiBold" Margin="10"/>
+            <TextBlock x:Name="DecisionDescription" Margin="5" FontSize="20" Foreground="AliceBlue" TextWrapping="Wrap"
+                       HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Justify"/>
+            <TextBlock x:Name="DecisionCost" Margin="5" FontSize="20" Foreground="PaleVioletRed" TextWrapping="Wrap"
+                       HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Justify"/>
+            <Button x:Name="DecisionOption1" Margin="5" Width="400" Height="40" FontSize="20" Click="Option1_Click"/>
+            <Button x:Name="DecisionOption2" Margin="5" Width="400" Height="40" FontSize="20" Click="Option2_Click"/>
         </StackPanel>
-        
-
-        
     </Grid>
 </UserControl>

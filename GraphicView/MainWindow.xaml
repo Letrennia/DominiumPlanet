@@ -6,8 +6,9 @@
         xmlns:local="clr-namespace:GraphicView"
         mc:Ignorable="d"
         Title="MainWindow" Height="675" Width="1200">
+        
     <Grid>
-        <ContentControl x:Name="PlayerStat"/>
-        <ContentControl x:Name="CurrentView"/>
+        <ContentControl x:Name="CurrentView" Panel.ZIndex="0"/>
+        <ContentControl x:Name="PlayerStat" Panel.ZIndex="1" VerticalAlignment="Top"/>
     </Grid>
 </Window>

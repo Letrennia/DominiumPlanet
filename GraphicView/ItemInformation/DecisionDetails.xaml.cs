@@ -28,7 +28,7 @@ namespace GraphicView.ItemInformation
         {
             DecisionName.Text = decision.Name;
             DecisionDescription.Text = decision.Description;
-            DecisionCost.Text = decision.Cost.ToString();
+            DecisionCost.Text = $"Koszt: {decision.Cost.ToString()}";
             DecisionOption1.Content = decision.option1;
             DecisionOption2.Content = decision.option2;
 

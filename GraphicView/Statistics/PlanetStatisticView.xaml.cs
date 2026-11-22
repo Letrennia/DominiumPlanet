@@ -55,7 +55,9 @@ namespace GraphicView.Statistics
         {
             Paragraph paragraph = new Paragraph(new Run(value))
             {
-                TextAlignment = TextAlignment.Center
+                TextAlignment = TextAlignment.Center,
+                BorderBrush = Brushes.PaleVioletRed,
+                BorderThickness = new Thickness(1)
             };
             return new TableCell(paragraph)
             {
@@ -66,6 +68,8 @@ namespace GraphicView.Statistics
         private TableCell CreateCell(string stringValue, int intValue, bool planetIndependence)
         {
             TableCell cell = CreateCell(stringValue);
+            //cell.BorderBrush = Brushes.PaleVioletRed;
+            //cell.BorderThickness = new Thickness(1);
             if (!planetIndependence && intValue < 20)
             {
                 cell.Background = Brushes.Red;
